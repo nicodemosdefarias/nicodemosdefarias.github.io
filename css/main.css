@@ -75,7 +75,7 @@ a.mudar-idioma {
 
 div.idioma-seletor {
   position: static;
-  width: 110px;
+  width: 90px;
   float: right;
 }
 
@@ -412,8 +412,21 @@ li:before {
     background-color: auto;
 }
 
-.bloco-texto {
-    margin-top: 3em;
+.sobre-imagem {
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin-left: 0px;
+  background-color: auto;
+}
+
+.foto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+
+  border-radius: 50%; /* para imagem em formato circular */
 }
 
 .h3 {
@@ -501,14 +514,6 @@ li:before {
     background-color: auto;
 }
 
-.rodape h1::after{
-    width: 100%;
-    height: 30px;
-    display: inline-block;
-    content: '';
-    margin: 0 auto;
-    background-color: auto;
-}
 
 .rodape-texto {
   position: static;
@@ -522,19 +527,19 @@ li:before {
 
 .rodape-atendimento {
   position: static;
-  width: 9cm;
-  height: 5cm;
+  width: 11cm;
+  height: 5.5cm;
   display: block;
   margin-left: auto;
   margin-right: auto;
   background-color: auto;
   color: #0d3553;
-  text-align: center;
-  line-height: 30px;
+  text-align: left;
+  line-height: 29px;
 
   padding-top: 0.5cm;
 
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0) 0px 3px 8px; /* antes (0,0,0,0.24) */
 }
 
 .rodape2 {
