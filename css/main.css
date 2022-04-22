@@ -34,17 +34,17 @@ header {
     margin-top: 8mm;
     margin-bottom: 3mm;
 
-    text-transform: uppercase;
+    text-transform: auto;
     text-decoration: none;  /*underline*/
-    font-size: 15px;
-    font-weight: normal;
+    font-size: 16px;
+    font-weight: bold;
     font-style: normal;
     font: auto;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     line-height: 20px;
     padding-left: 15px;
     padding-top: 0px;
-    color: auto;
+    color: #0d3553;
 }
 
 /* Seletor de idioma */
@@ -63,14 +63,22 @@ a.mudar-idioma {
   height: 25px;
 
   padding: 1px 6px;
-  border: 1px solid;
-  text-decoration: none;
-  border-radius: 0px;
+  border: 0px solid;
+  border-radius: 7px;
+
+  font: auto; /* caption */
+  font-style: auto;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: auto;
+  text-transform: auto;
+  letter-spacing: 2px;
+  line-height: auto;
 
   background-color: auto;
-  color: auto;
+  color: darkorange;
 
-  margin-top: 12px;
+  margin-top: 18px; /* antes: 12px */
 }
 
 div.idioma-seletor {
@@ -81,6 +89,10 @@ div.idioma-seletor {
 
 /* Titulo */
 .titulo {
+  font-family: "Segoe UI", Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+
   position: static;
   float: left;
   width: 500px;
@@ -103,12 +115,14 @@ div.idioma-seletor {
     text-align: center;
     color: #f1f1f1;
     margin-top: auto;
+
+    /*border-bottom: 4px solid red;*/
 }
 
 .mensagem {
     position: static;
     padding-top: 40px;
-    width: 300mm;
+    width: 100%;
     height: 250px;
     border-radius: auto;
     border-top-left-radius: 15px; /* Para evitar borda branca <20px */
@@ -158,7 +172,7 @@ main {
 }
 
 .meio {
-    width: 300mm;
+    width: 300mm; /*300mm*/
     margin: 0 auto;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -175,13 +189,13 @@ main {
     margin-left: auto;
     margin-top: auto;
     position: static;
-    width: 30cm;
+    width: 100%;
     height: 200px;
     background-color: auto;
 
     border-style: solid;
     border-width: 0px;
-    border-top: 4px solid rgb(250,20,50);
+    border-top: 2px solid red;
     border-bottom: 0px solid red;
     /*border-color: #aaaaaa;*/
 }
@@ -198,40 +212,40 @@ main {
 .atuacao-esquerda {
     position: static;
     float: left;
-    margin-top: 20px;
-    padding-left: 20px;
-    width: 33.33%; /*325px*/
+    padding-top: 20px;
+    padding-left: 25px;
+    width: 33.3333%; /*325px*/
     height: 170px;
     display: inline-block;
     text-align: left;
-    background-color: auto;
+    background-color: #e4e4e4;
     color: #222222;
 }
 
 .atuacao-meio {
     position: static;
     float: left;
-    margin-top: 20px;
+    padding-top: 20px;
     padding-left: 55px;
     padding-right: 55px;
-    width: 33.33%; /*7.1cm*/
+    width: 33.3333%; /*7.1cm*/
     height: 170px;
     display: inline-block;
-    text-align: center;
-    background-color: auto;
+    text-align: left;
+    background-color: #e9e9e9;
     color: #222222;
 }
 
 .atuacao-direita {
     position: static;
     float: right;
-    margin-top: 20px;
-    padding-right: 20px;
-    width: 33.33%; /*auto*/
+    padding-top: 20px;
+    padding-left: 65px;
+    width: 33.3333%; /*auto*/
     height: 170px;
     display: inline-block;
-    text-align: right;
-    background-color: auto;
+    text-align: left;
+    background-color: #e4e4e4;
     color: #222222;
 }
 
@@ -284,19 +298,21 @@ li {
 }
 
 li:before {
-  content: "\2713";
+  content: "\2713"; /* triangulo: "\25B7" */
   padding-right: 4px;
   color: steelblue;
 }
 
 .serv-1 {
-    width: 540px;
+    width: 50%; /*540px*/
     float: left;
     background-color: auto;
 
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 0px;
     margin-right: auto;
+
+    padding-left: 30px;
 }
 
 .serv-2 {
@@ -307,7 +323,7 @@ li:before {
   background-color: auto;
 
   display: block;
-  margin-left: 20px;
+  margin-left: 0px;
   margin-top: 20px;
   margin-right: 0px;
 }
@@ -349,7 +365,7 @@ li:before {
     height: 130px;
 
     display: block; /* para centralizar: block */
-    margin-left: 20px; /* para centralizar: auto */
+    margin-left: 0px; /* para centralizar: auto */
     margin-top: 20px; /* para centralizar: auto */
     margin-right: 0px;
     color: white;
@@ -392,6 +408,7 @@ li:before {
 
     border-radius: 0px;
     border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 
     text-align: center;
 }
@@ -399,11 +416,11 @@ li:before {
 .serv-descricao {
     position: static;
     float: left;
-    width: 550px;
+    width: 50%;
 
     display: inline-block; /* para centralizar: block */
-    margin-left: 10px; /* para centralizar:auto*/
-    margin-top: 0px; /* para centralizar:auto*/
+    margin-left: 0px; /* para centralizar:auto */
+    margin-top: 0px; /* para centralizar:auto */
 
     padding-top: 16px;
     padding-right: 20px;
@@ -429,23 +446,19 @@ li:before {
   border-radius: 50%; /* para imagem em formato circular */
 }
 
-.h3 {
-    font-weight: normal!important; /* O padrão de título h3 vem em negrito */
-}
-
 /* border-style: solid; */
 /* border-width: 1px;  */
 /* border-left-width: 1px; */
 /* border-radius: 5px; */
 /* border-color: #3366FF; */
 
-.clientes {
+.galeria {
     position: static;
     background-color: auto;
     text-align: center;
 }
 
-.clientes::before, .clientes::after{
+.galeria::before, .galeria::after{
     width: 100%;
     height: 30px;
     display: inline-block;
@@ -454,29 +467,39 @@ li:before {
     background-color: auto;
 }
 
-.clientes h1 {
+.galeria h1 {
     text-align: center;
     color: #333333;
 }
 
-.clientes h1::after{
-    width: 100%;
-    height: 30px;
-    display: inline-block;
-    content: '';
-    margin: 0 auto;
-    background-color: auto;
+div.galeria-titulo {
+  background-color: pink;
+  margin-top: 40px;
 }
 
-.clientes-1 {
-  position: static;
-  height: 3cm;
-    width: 6cm;
-    border-style: solid;
-    border-width: 1px;
-    border-left-width: auto;
-    border-radius: 5px;
-    border-color: #3366FF;
+div.galeria-fig {
+  display: inline-block;
+  float: left;
+  width: 28.75%;
+  height: auto;
+  background-color: auto;
+  margin-left: 3.33%;
+
+  margin-bottom: 10px;
+}
+
+div.galeria-figuras {
+  background-color: auto;
+  height: 200px;
+}
+
+img.galeria-fig {
+  display: inline-block;
+  float: left;
+  width: 28.75%;
+  height: auto;
+  background-color: pink;
+  margin-left: 3.33%;
 }
 
 .rodape hr {
@@ -542,6 +565,34 @@ li:before {
   box-shadow: rgba(0, 0, 0, 0) 0px 3px 8px; /* antes (0,0,0,0.24) */
 }
 
+div.rodape-curriculo {
+  position: static;
+
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: italic;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  padding-top: 5px;
+
+  width: 120px;
+  height: 35px;
+
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: darkblue;
+  background-color: auto;
+}
+
+.rodape-curriculo a {
+  text-decoration: none;
+  color: darkblue;
+}
+
 .rodape2 {
     position: static;
     width: auto;
@@ -579,7 +630,7 @@ li:before {
 
 .icone {
   display: block;
-  float: left;
-  margin-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
 }

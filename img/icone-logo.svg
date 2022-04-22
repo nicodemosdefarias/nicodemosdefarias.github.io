@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 4.2333333 4.2333336"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="icone-logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="22.078534"
+     inkscape:cx="7.2242115"
+     inkscape:cy="8.8094617"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     units="px"
+     width="31px">
+    <inkscape:grid
+       type="xygrid"
+       id="grid1439" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#0d3553;fill-opacity:1;stroke-width:0.2;stroke-linecap:round"
+       id="rect110"
+       width="4.1478705"
+       height="3.8515947"
+       x="0.047934767"
+       y="0.047934841" />
+    <rect
+       style="fill:#ff0000;fill-opacity:1;stroke-width:0.2;stroke-linecap:round"
+       id="rect110-2"
+       width="4.1478705"
+       height="0.29627648"
+       x="0.047934826"
+       y="3.8995297" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.27117px;line-height:1.25;font-family:Aldhabi;-inkscape-font-specification:'Aldhabi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#f1f1f1;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="0.65862066"
+       y="3.2587023"
+       id="text4075"><tspan
+         sodipodi:role="line"
+         id="tspan4073"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.27117px;font-family:Aldhabi;-inkscape-font-specification:'Aldhabi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#f1f1f1;fill-opacity:1;stroke-width:0.264583"
+         x="0.65862066"
+         y="3.2587023">N</tspan></text>
+  </g>
+</svg>
