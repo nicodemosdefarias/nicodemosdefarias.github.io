@@ -7,22 +7,31 @@
   <link rel="icon" href="./img/icone-logo.svg">
   <title> Nicodemos de Farias </title>
 
-  <link rel="stylesheet" type="text/css" href="./css/main.css">
   <script type="text/javascript" src="./js/jquery.min.js"></script>
+
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
   <script type="text/javascript" src="./js/script.js"></script>
   <script type="text/javascript" src="./js/app2.js"></script>
   <script type="text/javascript" src="./js/app3.js"></script>
+  <script type="text/javascript" src="./js/carregamento.js"></script>
 
   <meta charset="utf-8">
   <meta name="viewpoint" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+  <div class="loader"> <!-- Div para funcionar carregamento -->
+    <div> </div>
+  </div>
+  <div class="content"> <!-- Div para funcionar carregamento -->
   <header>
-    <div class="titulo">
+    <div class="titulo" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
       Nicodemos de Farias
     </div>
-    <div class="idioma-seletor">
+    <div class="idioma-seletor" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
       <a href="#" id="portugues" class="mudar-idioma"> PT </a>
       <a href="#" id="ingles" class="mudar-idioma"> EN </a>
     </div>
@@ -80,26 +89,27 @@
           <div id="portugues" class="idioma">
             <b> ÁREAS DE ATUAÇÃO </b> <br>
             Projeto em engenharia <br>
-            Projeto de sistemas hidráulicos <br>
-            Projeto de sistemas pneumáticos <br>
+            Projeto de máquinas <br>
+            Hidráulica e pneumática <br>
             Planejamento da manutenção
           </div>
           <div id="ingles" class="idioma ativo">
             <b> AREAS OF EXPERTISE </b> <br>
             Design in Engineering <br>
-            Hydraulic system design <br>
-            Pneumatic system design <br>
+            Machine design <br>
+            Hidraulics and pneumatics <br>
             Maintenance planning
           </div>
 
         </div>
       </section>
       <br>
+
       <hr>
 
-      <section class="servicos">
+      <section class="servicos" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
         <div id="portugues" class="idioma">
-          <h1> Projeto em Engenharia </h1>
+          <h1 class="titulo-01"> Projeto em Engenharia </h1>
         </div>
         <div id="ingles" class="idioma ativo">
           <h1> Design in Engineering </h1>
@@ -117,10 +127,10 @@
         <div class="serv-1">
           <div class="servicos-imagem servicos-imagem1">
             <div id="portugues" class="idioma">
-              <p> &#10094; Projeto &#10095; </p>
+              <!-- <p> &#10094; Projeto &#10095; </p> -->
             </div>
             <div id="ingles" class="idioma ativo">
-              <p> &#10094; Design &#10095; </p>
+              <!-- <p> &#10094; Design &#10095; </p> -->
             </div>
 
           </div>
@@ -149,7 +159,7 @@
         <div class='serv-descricao'>
           <div id="portugues" class="idioma">
             <ul type="none">
-              <li> Aplicação de metodologia para desenvolvimento de novos produtos </li>
+              <li> Aplicação de metodologia no desenvolvimento de novos produtos </li>
               <li> Condução de reuniões estratégicas para o planejamento do projeto </li>
               <li> Levantamento e classificação das especificações de projeto </li>
               <li> Uso de ferramentas para o projeto conceitual (árvore de funções e meios, matriz morfológica) </li>
@@ -178,20 +188,20 @@
         </div>
       </section>
 
-      <section class="servicos">
+      <section class="servicos" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
         <div id="portugues" class="idioma">
-          <h1> Projeto de Sistemas Hidráulicos </h1>
+          <h1> Projeto de Máquinas </h1>
         </div>
         <div id="ingles" class="idioma ativo">
-          <h1> Hydraulic System Design </h1>
+          <h1> Machine Design </h1>
         </div>
 
         <div class="servicos-subtitulo">
           <div id="portugues" class="idioma">
-            <p> Serviços e documentação técnica de acordo com a sua necessidade </p> <br>
+            <p> Cálculo, desenho e especificações para fabricação </p> <br>
           </div>
           <div id="ingles" class="idioma ativo">
-            <p> Services and technical documentation according to your need </p> <br>
+            <p> Calculation, drawing and specifications for production </p> <br>
           </div>
 
         </div>
@@ -199,21 +209,21 @@
         <div class="serv-1">
           <div class="servicos-imagem servicos-imagem3">
             <div id="portugues" class="idioma">
-              <p> &#10094; Hidráulica &#10095; </p>
+              <!-- <p> &#10094; Máquinas &#10095; </p> -->
             </div>
             <div id="ingles" class="idioma ativo">
-              <p> &#10094; Hydralics &#10095; </p>
+              <!-- <p> &#10094; Machines &#10095; </p> -->
             </div>
-
           </div>
+
           <div class="serv-2">
             <div id="portugues" class="idioma">
-              Em dúvida sobre o sistema de controle hidráulico mais adequado para a sua aplicação?
-              Entre em contato sobre esse ou outros serviços.<br>
+              Para a criação de máquinas que realizem determinadas funções é necessário
+              o uso de ferramentas de projetos adequadas desde a concepção até o detalahamento para fabricação. <br>
             </div>
             <div id="ingles" class="idioma ativo">
-              In doubt about the most suitable hydraulic control system for your application?
-              Get in touch about this or other services.<br>
+              In order to create machines that perform certain functions, it is necessary to
+              use proper design tools from conception to technical production specifications. <br>
             </div>
 
             <div class="serv-3">
@@ -231,44 +241,40 @@
         <div class='serv-descricao'>
           <div id="portugues" class="idioma">
             <ul type="none">
-              <li> Especificação técnica de componentes (unidades hidráulicas, cilindros, válvulas, mangueiras, conexões) </li>
-              <li> Verificação de projetos e diagramas de circuitos hidráulicos </li>
-              <li> Automação de processos usando eletro hidráulica </li>
-              <li> Elaboração de manuais de operação de máquinas </li>
-              <li> Avaliação da eficiência energética </li>
-              <li> Modelagem e simulação dinâmica de sistemas </li>
-              <li> Atendimento às normas de segurança no trabalho </li>
-              <li> Suporte técnico para instalações </li>
-              <li> Identificação de problemas </li>
-              <!-- <li> Uso e adequação de padrões internacionais </li> -->
-              <!-- <li> Desenho 3D de componentes estruturais acionados </li> -->
-              <!-- <li> Elaboração de memorial descritivo com dimensionamento dos componentes </li> -->
+              <li> Modelagem 3D de componentes e sistemas </li>
+              <li> Análise de tensões em componetes críticos </li>
+              <li> Cálculos analíticos de máquinas e estruturas </li>
+              <li> Especificação de tolerâncias geométricas e dimensionais </li>
+              <li> Seleção de material </li>
+              <li> Especificação de transmissões mecânicas e máquinas rotativas </li>
+              <li> Seleção de elementos de máquinas </li>
+              <li> Uso e adequação de padrões internacionais </li>
+              <li> Interface com o setor de fabricação </li>
             </ul>
           </div>
           <div id="ingles" class="idioma ativo">
             <ul type="none">
-              <li> Component technical specifications (hydraulic power units, cylinders, valves, hoses, connectors) </li>
-              <li> Verification of designs and hydraulic circuit diagrams </li>
-              <li> Process automation using electro hydraulics </li>
-              <li> Elaboration of machine operation manuals </li>
-              <li> Energy efficiency assessment </li>
-              <li> Modelling and simulation of dynamic systems </li>
-              <li> Compliance with occupational safety standards </li>
-              <li> Assembly technical support </li>
-              <li> Systems troubleshooting </li>
-              <!-- <li> Elaboration of the descriptive memorial with dimensioning of the components </li> -->
+              <li> 3D Modeling of components and systems </li>
+              <li> Stress analysis in critical components </li>
+              <li> Analytical calculation of machines and structures </li>
+              <li> Dimensional and geometric product specifications </li>
+              <li> Material selection </li>
+              <li> Specification of mechanical transmissions and rotating machines </li>
+              <li> Machine elements selection </li>
+              <li> Use and adequacy of international standards </li>
+              <li> Interface with the manufacturing sector </li>
             </ul>
           </div>
 
         </div>
       </section>
 
-      <section class="servicos">
+      <section class="servicos" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
         <div id="portugues" class="idioma">
-          <h1> Projeto de Sistemas Pneumáticos </h1>
+          <h1> Hidráuica e Pneumática </h1>
         </div>
         <div id="ingles" class="idioma ativo">
-          <h1> Pneumatic System Design </h1>
+          <h1> Hydraulics and Pneumatics </h1>
         </div>
 
         <div class="servicos-subtitulo">
@@ -283,21 +289,21 @@
         <div class="serv-1">
           <div class="servicos-imagem servicos-imagem4">
             <div id="portugues" class="idioma">
-              <p> &#10094; Pneumática &#10095; </p>
+              <!-- <p> &#10094; Pneumática &#10095; </p> -->
             </div>
             <div id="ingles" class="idioma ativo">
-              <p> &#10094; Pneumatics &#10095; </p>
+              <!-- <p> &#10094; Pneumatics &#10095; </p> -->
             </div>
 
           </div>
           <div class="serv-2">
             <div id="portugues" class="idioma">
-              Independente do tipo e tamanho da sua planta industrial, entre em contato para discutirmos a melhor solução
-              para o uso do ar comprimido de forma mais eficiente. <br>
+              Em dúvida sobre o sistema de controle hidráulico ou pneumático mais adequado para a sua aplicação?
+              Entre em contato para mais informações sobre esse ou outros serviços. <br>
             </div>
             <div id="ingles" class="idioma ativo">
-              Regardless of the type and size of your industrial plant, get in touch to discuss the best solution
-              to use compressed air more efficiently. <br>
+              In doubt about the most suitable hydraulic or pneumatic control system for your application?
+              Get in touch for more information on this or others services. <br>
             </div>
 
             <div class="serv-3">
@@ -315,29 +321,32 @@
         <div class='serv-descricao'>
           <div id="portugues" class="idioma">
             <ul>
-              <li> Especificação técnica de componentes </li>
-              <li> Melhoria de projetos existentes para a redução do consumo de ar comprimido </li>
-              <li> Automação eletropneumática </li>
-              <li> Implementação de lógicas de acionamentos em CLP </li>
-              <li> Seleção de sensores e transdutores </li>
-              <li> Verificação de projetos e diagramas de circuitos pneumáticos </li>
-              <li> Avaliação da eficiência energética </li>
+              <li> Especificação técnica de componentes (unidades de potência, cilindros, válvulas, mangueiras, conexões) </li>
+              <li> Melhoria de projetos existentes do ponto de vista energético e operacional </li>
+              <li> Automação de processos usando acionamentos elétricos </li>
+              <li> Elaboração de manuais de operação de máquinas </li>
+              <li> Avaliação de eficiência energética </li>
               <li> Modelagem e simulação dinâmica de sistemas </li>
               <li> Suporte técnico para instalações </li>
+              <li> Identificação de problemas </li>
+              <li> Implementação de lógicas de acionamentos em CLP </li>
+              <li> Seleção de sensores e transdutores </li>
+              <!-- <li> Uso e adequação de padrões internacionais </li> -->
               <!-- <li> Elaboração de memorial descritivo com dimensionamento dos componentes </li> -->
             </ul>
           </div>
           <div id="ingles" class="idioma ativo">
             <ul>
-              <li> Component technical specifications </li>
-              <li> Improvement of existing projects to reduce compressed air consumption </li>
-              <li> Electropneumatic automation </li>
-              <li> PLC programming implementation </li>
-              <li> Selection of sensors and transducers </li>
-              <li> Verification of designs and pneumatic circuit diagrams </li>
+              <li> Component technical specifications (power units, cylinders, valves, hoses, connectors) </li>
+              <li> Improvement of existing projects in terms of energy consumption and operability </li>
+              <li> Process automation using electric commands </li>
+              <li> Elaboration of machine operation manuals </li>
               <li> Energy efficiency asssessment </li>
               <li> Modelling and simulation of dynamic systems </li>
               <li> Assembly technical support </li>
+              <li> Systems troubleshooting </li>
+              <li> PLC programming implementation </li>
+              <li> Selection of sensors and transducers </li>
               <!-- <li> Elaboration of a descriptive memorial with dimensioning of the components </li> -->
             </ul>
           </div>
@@ -345,7 +354,7 @@
         </div>
       </section>
 
-      <section class="servicos">
+      <section class="servicos" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
         <div id="portugues" class="idioma">
           <h1> Planejamento da Manutenção </h1>
         </div>
@@ -366,17 +375,17 @@
         <div class="serv-1">
           <div class="servicos-imagem servicos-imagem2">
             <div id="portugues" class="idioma">
-              <p> &#10094; Manutenção &#10095; </p>
+              <!-- <p> &#10094; Manutenção &#10095; </p> -->
             </div>
             <div id="ingles" class="idioma ativo">
-              <p> &#10094; Maintenance &#10095; </p>
+              <!-- <p> &#10094; Maintenance &#10095; </p> -->
             </div>
 
           </div>
           <div class="serv-2">
             <div id="portugues" class="idioma">
               O planejamento da manutenção eficiente representa o diferencial para empresas que buscam reduzir custos e
-              aumentar a confiabilidade das suas instalações.<br>
+              aumentar a confiabilidade das suas instalações. <br>
             </div>
             <div id="ingles" class="idioma ativo">
               Efficient maintenance planning is imperative for companies that seek to reduce costs and
@@ -397,10 +406,10 @@
         <div class='serv-descricao'>
           <div id="portugues" class="idioma">
             <ul type="none">
-              <li> Análise de falhas em sistemas mecânicos, hidráulicos e pneumáticos </li>
+              <li> Análise de falhas em sistemas de transmissão de potência mecânicos, hidráulicos e pneumáticos </li>
               <li> Gestão de indicadores da manutenção </li>
               <li> Elaboração de FMEA para equipamentos críticos </li>
-              <li> Melhoria de projetos existentes para o aumento da confiabilidade operacional </li>
+              <li> Melhoria de projetos para aumento da confiabilidade operacional </li>
               <li> Coordenação das atividades da manutenção industrial </li>
               <li> Treinamento da equipe de manutenção </li>
               <li> Estudos para melhorias contínuas voltadas a manutenção e operação industrial </li>
@@ -413,10 +422,10 @@
           </div>
           <div id="ingles" class="idioma ativo">
             <ul type="none">
-              <li> Failure analysis in mechanical, hydraulic and pneumatic systems </li>
+              <li> Failure analysis in mechanical, hydraulic and pneumatic power transmission systems </li>
               <li> Management of maintenance indicators </li>
               <li> FMEA analysis for critical equipment </li>
-              <li> Improving existing designs to increase operational reliability </li>
+              <li> Designs improvements to increase operational reliability </li>
               <li> Coordination of industrial maintenance activities </li>
               <li> Maintenance team training </li>
               <li> Studies for continuous improvement on industrial maintenance and operation </li>
@@ -431,7 +440,7 @@
         </div>
       </section>
 
-      <section class="galeria">
+      <section class="galeria" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
         <div id="portugues" class="idioma">
           <h1> Galeria </h1>
         </div>
@@ -531,8 +540,7 @@
       <hr>
 
       <footer>
-
-        <div class="rodape" id="contato"> <!-- id="contato" -->
+        <div class="rodape" id="contato"  data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
           <div id="portugues" class="idioma">
             <h1> Contato </h1>
           </div>
@@ -583,7 +591,6 @@
 
           </div>
         </div>
-
         <div class="rodape2">
           <div id="portugues" class="idioma">
             <font size="2px"> 2022 por Nicodemos de Farias </font>
@@ -594,11 +601,18 @@
 
         </div>
       </footer>
+
     </div>
   </main>
 
   <div class="rodape-3">
     <img class="icone" src="./img/crea.jpg">
   </div>
+</div> <!-- div do content -->
+
+<script>
+  AOS.init();
+</script>
+
 </body>
 </html>
