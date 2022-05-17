@@ -29,7 +29,7 @@ body {
 
 header {
     position: static;
-    width: 300mm;
+    width: 1200px; /* antes = 300mm */
     height: 60px;
     background-color: auto;
     display: block;
@@ -86,6 +86,45 @@ header {
   }
 }
 
+/* Titulo */
+.titulo {
+  /* font-family: "Segoe UI", Arial, sans-serif;*/
+  font-family: righteous;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: lighter;
+
+  position: static;
+  float: left;
+  width: 500px;
+  height: auto;
+  background-color: auto;
+
+  border-style: solid;
+  border-radius: 0px;
+  border-width: 0px;
+  border-color: steelblue;
+
+  padding-left: 4px;
+
+  margin-top: 20px;
+}
+
+.titulo a {
+  text-decoration: none;
+}
+
+/* Menu */
+.menu {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #0d3553;
+}
+
 /* Seletor de idioma */
 /* https://stackoverflow.com/questions/59196117/toggle-language-between-divs */
 div.idioma {
@@ -129,32 +168,6 @@ div.idioma-seletor {
   position: static;
   width: 90px;
   float: right;
-}
-
-/* Titulo */
-.titulo {
-  font-family: "Segoe UI", Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: lighter;
-
-  position: static;
-  float: left;
-  width: 500px;
-  height: auto;
-  background-color: auto;
-
-  border-style: solid;
-  border-radius: 0px;
-  border-width: 0px;
-  border-color: steelblue;
-
-  padding-left: 4px;
-
-  margin-top: 20px;
-}
-
-.titulo a {
-  text-decoration: none;
 }
 
 .imagem {
@@ -209,6 +222,7 @@ div.idioma-seletor {
     text-transform: uppercase;
     letter-spacing: 2px;
     line-height: 45px;
+    color: #f1f1f1;
 }
 
 .destaque-amarelo {
@@ -224,7 +238,7 @@ main {
 }
 
 .meio {
-    width: 300mm;
+    width: 1200px; /*300mm = 1130px, total = 1348px*/
     margin: 0 auto;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -329,7 +343,7 @@ main {
 
 main hr {
     font-size: 1px;
-    width: 30mm;
+    width: 100px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -559,10 +573,11 @@ div.galeria-figuras {
 img.galeria-fig {
   display: inline-block;
   float: left;
-  width: 28.75%;
+  width: 370px; /* antes=28.75% */
+  margin-left: 22.5px; /* antes=3.33% */
   height: auto;
+  border-radius: 5px;
   background-color: pink;
-  margin-left: 3.33%;
 }
 
 .buttons {
@@ -586,25 +601,18 @@ img.galeria-fig {
 }
 
 .regua1 {
-  margin-left: 232px;
+  margin-left: 265px;
   width: 220px;
 }
 
 .regua2 {
-  margin-left: 457px;
+  margin-left: 490px;
   width: 220px;
 }
 
 .regua3 {
-  margin-left: 681px;
+  margin-left: 714px;
   width: 220px;
-}
-
-.rodape hr {
-    height: 1px;
-    border-width: 0;
-    color: gray;
-    background-color:gray
 }
 
 .rodape {
@@ -614,7 +622,6 @@ img.galeria-fig {
     text-align: center;
     color: black; /* todo conteúdo adicionado aqui dentro */
     background-color: inherit;
-
 }
 
 .rodape::before{
@@ -634,7 +641,6 @@ img.galeria-fig {
     margin: 0 auto;
     background-color: auto;
 }
-
 
 .rodape-texto {
   position: static;

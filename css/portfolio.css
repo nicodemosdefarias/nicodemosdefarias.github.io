@@ -1,242 +1,4 @@
 
-*{ /* remover padrões dos navegadores */
-    margin: 0; /* para tirar a barra na parte inferior */
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-    position: static; /* por padrão já vem static */
-    width: 100%;
-    /*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
-    /* font-family: verdana */
-    /*font-family: Optima, sans-serif;*/
-    /*font-family: Gill Sans, sans-serif;*/
-    /*font-family: Trebuchet MS, sans-serif;*/
-    /*font-family: Arial Narrow, sans-serif;*/
-    /*font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;*/
-    font-family: Noto Sans, sans-serif;
-    font-style: normal; /* normal,italic,oblique */
-    font-weight: 200px;
-    font-variant: normal; /* normal,small-caps */
-    font-stretch: normal; /* condensed,semi-condensed,normal,semi-expanded,expanded */
-    background: #f1f1f1;
-}
-
-header {
-    position: static;
-    width: 300mm;
-    height: 60px;
-    background-color: auto;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: auto;
-    margin-bottom: 3mm;
-
-    text-transform: auto;
-    text-decoration: none;  /*underline*/
-    font-size: 16px;
-    font-weight: bold;
-    font-style: normal;
-    font: auto;
-    letter-spacing: 2px;
-    line-height: 20px;
-    padding-left: 15px;
-    padding-top: 20px;
-    color: #0d3553;
-}
-
-/* Div de carregamento enquanto a página carrega completamente */
-/* fonte: Show Loading Div While The Page Loads Completely | HTML, CSS, jQuery (youtube) */
-.content {
-  display: none;
-}
-
-.loader {
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  background-color: #16191e;
-  position: absolute;
-}
-
-.loader>div {
-  height: 100px;
-  width: 100px;
-  border: 10px solid #45474b;
-  border-top-color: #2a88e6;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-radius: 50%;
-  animation: spin 1s infinite linear;
-}
-
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/* Seletor de idioma */
-/* https://stackoverflow.com/questions/59196117/toggle-language-between-divs */
-div.idioma {
-  display: none;
-}
-
-div.idioma.ativo {
-  display: block;
-}
-
-a.mudar-idioma {
-  display: inline-block;
-  width: 35px;
-  height: 25px;
-
-  padding: 1px 6px;
-  border: 0px solid;
-  border-radius: 7px;
-
-  font: auto; /* caption */
-  font-style: auto;
-  font-size: 15px;
-  font-weight: bold;
-  text-decoration: auto;
-  text-transform: auto;
-  letter-spacing: 2px;
-  line-height: auto;
-
-  background-color: auto;
-  color: darkorange;
-
-  margin-top: 18px; /* antes: 12px */
-}
-
-.idioma-seletor a:hover {
-  cursor: pointer;
-  background-color: #e4e4e4;
-}
-
-div.idioma-seletor {
-  position: static;
-  width: 90px;
-  float: right;
-}
-
-/* Titulo */
-.titulo {
-  font-family: "Segoe UI", Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: lighter;
-
-  position: static;
-  float: left;
-  width: 500px;
-  height: auto;
-  background-color: auto;
-
-  border-style: solid;
-  border-radius: 0px;
-  border-width: 0px;
-  border-color: steelblue;
-
-  padding-left: 4px;
-
-  margin-top: 20px;
-}
-
-.titulo a {
-  text-decoration: none;
-}
-
-.imagem {
-    height: auto;
-    padding: 0px;
-    text-align: center;
-    color: #f1f1f1;
-    margin-top: auto;
-
-    /*border-bottom: 4px solid red;*/
-}
-
-.mensagem {
-    position: static;
-    padding-top: 40px;
-    width: 100%;
-    height: 250px;
-    border-radius: auto;
-    border-top-left-radius: 15px; /* Para evitar borda branca <20px */
-    border-top-right-radius: 15px; /* Para evitar borda branca <20px */
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-
-    background-image: url('../img/desenho1.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-color: #0d3553;
-    background-blend-mode: overlay;
-
-    /*background-image: radial-gradient(130% 30% ellipse at bottom, steelblue -10%,#0d3553 50%)*/
-
-    /*background-color: rgb(82,136,217,0.5); /*https://www.rapidtables.com/convert/color/hex-to-rgb.html*/
-    /*background-color: rgb(82,136,217); 0,63,68 ; 8,37,41*/
-    /*opacity: 0.8; /*não funciona se tiver texto */
-
-    border-bottom-style: solid;
-    border-bottom-color: red;
-    border-bottom-width: 2px;
-}
-
-.mensagem-texto {
-    position: static;
-}
-
-.destaque-branco {
-    font: auto; /* caption */
-    font-style: auto;
-    font-size: 32px;
-    font-weight: 100px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    line-height: 45px;
-}
-
-.destaque-amarelo {
-    font-size: 25px;
-    color: #cc9900;
-}
-
-main {
-    position: static;
-    width: 100%;
-    margin: 0 auto;
-    background-color: auto;
-}
-
-.meio {
-    width: 300mm;
-    margin: 0 auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
-
-    border-style: solid;
-    border-radius: 20px;
-    border-width: 0px;
-    border-color: auto;
-
-    background-color: #f1f1f1;
-}
-
 .atuacao {
   position: static;
   margin-top: 0px;
@@ -314,26 +76,9 @@ main {
     background-color: auto;
 }
 
-.portfolio h1{
+.portfolio h1, p{
     text-align: center;
     color: #333333;
-}
-
-.portfolio-subtitulo {
-    text-align: center;
-}
-
-main hr {
-    font-size: 1px;
-    width: 30mm;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-
-    border-style: solid;
-    border-width: 2px;
-    border-color: steelblue; /*#7D18FD*/
 }
 
 .portfolio::before, .portfolio::after{
@@ -345,21 +90,13 @@ main hr {
     background-color: auto;
 }
 
-ul {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-li {
-  padding-left: 2.3em;
-  text-indent: -1.25em;
-}
-
-li:before {
-  content: "\2713"; /* triangulo: "\25B7" */
-  padding-right: 4px;
-  color: steelblue;
+.portfolio-titulo::after{
+    width: 100%;
+    height: 40px;
+    display: inline-block;
+    content: '';
+    margin: 0 auto;
+    background-color: auto;
 }
 
 .portfolio-metade {
@@ -368,102 +105,69 @@ li:before {
     background-color: auto;
 
     display: inline-block;
-    margin-left: 0px;
     margin-right: auto;
-
-    padding-left: 30px;
 }
 
 .portfolio-chaves {
   position: static;
   float: auto;
-  width: 500px;
+  width: 520px;
   color: #234567;
   background-color: auto;
 
+  /* para centralizar */
   display: block;
-  margin-left: 0px;
+  margin-left: auto;
+  margin-right: auto;
+
   margin-top: 20px;
-  margin-right: 0px;
 
   text-align: center;
 }
 
 .portfolio-imagem {
-    position: static;
-    float: auto;
-    width: 500px;
-    height: 350px;
+  position: static;
+  float: auto;
+  width: 520px;
+  height: 350px;
 
-    display: block; /* para centralizar: block */
-    margin-left: 0px; /* para centralizar: auto */
-    margin-top: 20px; /* para centralizar: auto */
-    margin-right: 0px;
-    color: white;
+  /* para centralizar */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
-    border-radius: 10px;
+  border-radius: 10px;
 
-    background-color: white; /* para preencher o espaço 500px x 400px */
+  /* para preencher o espaço das bordas */
+  background-color: white;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .portfolio-imagem1 {
     background-image: url('../img/portfolio/p1.gif');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-.portfolio-imagem1a {
-    background-image: url('../img/portfolio/p1a.gif');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 
 .portfolio-imagem2 {
     background-image: url('../img/portfolio/p2.gif');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-.portfolio-imagem2a {
-    background-image: url('../img/portfolio/p2a.gif');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 
 .portfolio-imagem3 {
     background-image: url('../img/portfolio/p3.gif');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-.portfolio-imagem3a {
-    background-image: url('../img/portfolio/p3a.gif');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 
 .portfolio-imagem4 {
     background-image: url('../img/portfolio/p4.gif');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom;
 }
 
-.portfolio-imagem4a {
-    background-image: url('../img/portfolio/p4a.gif');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+.portfolio-imagem5 {
+    background-image: url('../img/portfolio/p5.png');
 }
 
 .portfolio-imagem p {
-    font-size: 15px; /*20px*/
+    font-size: 20px;
     font-weight: normal;
     letter-spacing: 1px;
     padding-top: 5px;
@@ -478,126 +182,99 @@ li:before {
     text-align: center;
 }
 
-.sobre-imagem {
-  width: 150px;
-  height: 150px;
+/* Para o carrosel */
+.quadro {
+  display: inline-block;
+  background-color: auto;
+  width: 50%;
   float: left;
-  margin-left: 0px;
-  background-color: auto;
 }
 
-.foto {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.quadro p {
+  text-align: center;
+  font-size: 1em;
+  color: #aaaaaa;
   margin-top: 10px;
-
-  border-radius: 50%; /* para imagem em formato circular */
 }
 
-.rodape hr {
-    height: 1px;
-    border-width: 0;
-    color: gray;
-    background-color:gray
+.setas {
+  position: absolute;
+  margin-top: 160px;
 }
 
-.rodape {
-    position: static;
-    width: auto;
-    height: auto;
-    text-align: center;
-    color: black; /* todo conteúdo adicionado aqui dentro */
-    background-color: inherit;
+.setas button {
+  width: 25px;
+  height: 25px;
+  border: 0px solid steelblue;
+  outline: none;
+  background-color: auto; /* no tutorial: transparent */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s; /* para o efeito de deslizar */
 
+  background-color: rgba(0,0,0,0);
+
+  color: auto;
+  font-size: auto;
 }
 
-.rodape::before{
-    width: auto;
-    height: 30px;
-    display: inline-block;
-    content: '';
-    margin: 0 auto;
-    background-color: auto;
+.setas button:hover {
+  cursor: pointer;
+  background-color: rgba(2,150,160,0.5);
 }
 
-.rodape::after{
-    width: auto;
-    height: 10px;
-    display: inline-block;
-    content: '';
-    margin: 0 auto;
-    background-color: auto;
+.seta-e {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 425px;
 }
 
+.seta-d {
+}
 
-.rodape-texto {
-  position: static;
-  width: 250mm;
+.carrosel img {
+  /* width: 500px; não definir aqui */
+  /* height: 350px; não definir aqui */
+  border-radius: 10px;
+}
+
+.quadro-interno {
+  position: relative;
+  width: 520px; /* mesmo de img */
+  height: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white; /* branco para tirar o efeito de arrendodamento das imagens */
+
+  /* para centralizar */
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: inherit;
-  text-align: auto;
 }
 
-.rodape-atendimento {
-  position: static;
-  width: 11cm;
-  height: 5.5cm;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: auto;
-  color: #0d3553;
-  text-align: left;
-  line-height: 29px;
-
-  padding-top: 0.5cm;
-
-  box-shadow: rgba(0, 0, 0, 0) 0px 3px 8px; /* antes (0,0,0,0.24) */
+.carrosel {
+  display: inline-flex;
+  transition: all 0.5s; /* para o efeito de deslizar */
 }
 
-.rodape2 {
-    position: static;
-    width: auto;
-    height: 40px;
-    text-align: center;
-    padding-top: 8px;
-    color: #f1f1f1;
-    background-color: #0d3553;
-
-    border-style: solid;
-
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-bottom-width: 0px;
-
-    border-left-width: 0px;
-    border-right-width: 0px;
-
-    border-top-width: 2px;
-    border-top-color: red;
-
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
+.botoes {
+  /* fazer depois */
+  text-align: center;
 }
 
-.rodape-3 {
-  position: static;
-  width: 300mm;
-  height: auto;
-  background-color: auto;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 5mm;
-  margin-bottom: 5mm;
-  padding-left: 0px;
+.botoes button {
+  width: 15px;
+  height: 15px;
+  border: 1px solid steelblue;
+  outline: none;
+  background-color: auto; /* no tutorial: transparent */
+  border-radius: 7.5px;
+  margin-top: 22px;
+  margin-left: 7px;
+  cursor: pointer;
+  transition: all 0.5s; /* para o efeito de deslizar */
 }
 
-img.icone {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+.botoes button:nth-child(1) {
+  background-color: steelblue;
 }

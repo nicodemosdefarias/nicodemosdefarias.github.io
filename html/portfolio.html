@@ -9,14 +9,20 @@
 
   <script type="text/javascript" src="../js/jquery.min.js"></script>
 
+  <!-- Efeito: Animate On Scroll -->
   <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
   <link rel="stylesheet" type="text/css" href="../css/portfolio.css">
+
   <script type="text/javascript" src="../js/script.js"></script>
   <script type="text/javascript" src="../js/app2.js"></script>
   <script type="text/javascript" src="../js/app3.js"></script>
   <script type="text/javascript" src="../js/carregamento.js"></script>
+
+  <!-- para a fonte do titulo -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Righteous" rel="stylesheet">
 
   <meta charset="utf-8">
   <meta name="viewpoint" content="width=device-width, initial-scale=1">
@@ -31,7 +37,10 @@
     <div class="titulo" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
       <a href="../index.html"> Nicodemos de Farias </a>
     </div>
-
+    <div class="menu">
+      <a href="../index.html"> HOME - </a>
+      <a href="html/portfolio.html"> PORTFOLIO </a>
+    </div>
     <div class="idioma-seletor" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
       <a href="#" id="portugues" class="mudar-idioma"> PT </a>
       <a href="#" id="ingles" class="mudar-idioma"> EN </a>
@@ -88,19 +97,14 @@
       <hr>
 
       <section class="portfolio" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
-        <div id="portugues" class="idioma">
-          <h1> Reaproveitamento de ar comprimido em sistemas de automação </h1>
-        </div>
-        <div id="ingles" class="idioma ativo">
-          <h1> Reuse of compressed air in automation systems </h1>
-        </div>
-
-        <div class="portfolio-subtitulo">
+        <div class="portfolio-titulo">
           <div id="portugues" class="idioma">
-            <p> Aplicação industrial </p> <br>
+            <h1> Reaproveitamento de ar comprimido em sistemas de automação </h1>
+            <p> Aplicação industrial </p>
           </div>
           <div id="ingles" class="idioma ativo">
-            <p> Industrial application </p> <br>
+            <h1> Reuse of compressed air in automation systems </h1>
+            <p> Industrial application </p>
           </div>
         </div>
 
@@ -122,28 +126,59 @@
             </div>
           </div>
         </div>
+
+        <!-- antes
         <div class="portfolio-metade">
-          <div class="portfolio-imagem portfolio-imagem1a">
+          <div class="portfolio-imagem portfolio-imagem1">
+          </div>
+        </div> -->
+
+        <div class="quadro">
+          <div class="quadro-interno">
+            <!-- <div class="setas">
+              <button class="seta-e" id="bot-e"> &#10094; </button>
+              <button class="seta-d" id="bot-d"> &#10095; </button>
+            </div> -->
+            <div class="carrosel">
+              <img src="../img/portfolio/p1a.gif" alt="">
+              <img src="../img/portfolio/p1b.png" alt="">
+              <img src="../img/portfolio/p1c.png" alt="">
+              <img src="../img/portfolio/p1d.png" alt="">
+              <img src="../img/portfolio/p1e.png" alt="">
+              <img src="../img/portfolio/p1f.png" alt="">
+              <img src="../img/portfolio/p1g.png" alt="">
+            </div>
+          </div>
+          <div class="botoes">
+            <button id="bot1"></button>
+            <button id="bot2"></button>
+            <button id="bot3"></button>
+            <button id="bot4"></button>
+            <button id="bot5"></button>
+            <button id="bot6"></button>
+            <button id="bot7"></button>
+          </div>
+          <div id="portugues" class="idioma">
+            <p> Selecione um </p>
+          </div>
+          <div id="ingles" class="idioma ativo">
+            <p> Select one </p>
           </div>
         </div>
       </section>
 
       <section class="portfolio" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
-        <div id="portugues" class="idioma">
-          <h1> Hidráulica digital </h1>
-        </div>
-        <div id="ingles" class="idioma ativo">
-          <h1> Digital hydraulics </h1>
-        </div>
-
-        <div class="portfolio-subtitulo">
+        <div class="portfolio-titulo">
           <div id="portugues" class="idioma">
-            <p> Modelo para simulação de controle de avião </p> <br>
+            <h1> Hidráulica digital </h1>
+            <p> Modelo para simulação de controle de avião </p>
           </div>
           <div id="ingles" class="idioma ativo">
-            <p> Model for aerospacial control simulation </p> <br>
+            <h1> Digital hydraulics </h1>
+            <p> Model for aerospacial control simulation </p>
           </div>
         </div>
+
         <div class="portfolio-metade">
           <div class="portfolio-imagem portfolio-imagem2">
             <div id="portugues" class="idioma">
@@ -162,28 +197,38 @@
             </div>
           </div>
         </div>
-        <div class="portfolio-metade">
-          <div class="portfolio-imagem portfolio-imagem2a">
+        <div class="quadro">
+          <div class="quadro-interno">
+            <div class="carrosel carrosel2">
+              <img src="../img/portfolio/p2a.png" alt="">
+              <img src="../img/portfolio/p2b.png" alt="">
+              <img src="../img/portfolio/p2c.png" alt="">
+              <img src="../img/portfolio/p2d.png" alt="">
+              <img src="../img/portfolio/p2e.png" alt="">
+            </div>
+          </div>
+          <div class="botoes">
+            <button id="bot2-1"></button>
+            <button id="bot2-2"></button>
+            <button id="bot2-3"></button>
+            <button id="bot2-4"></button>
+            <button id="bot2-5"></button>
           </div>
         </div>
       </section>
 
       <section class="portfolio" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
-        <div id="portugues" class="idioma">
-          <h1> Automação hidráulica </h1>
-        </div>
-        <div id="ingles" class="idioma ativo">
-          <h1> Hydraulic automation </h1>
-        </div>
-
-        <div class="portfolio-subtitulo">
+        <div class="portfolio-titulo">
           <div id="portugues" class="idioma">
-            <p> Aplicação industrial </p> <br>
+            <h1> Automação hidráulica </h1>
+            <p> Aplicação industrial </p>
           </div>
           <div id="ingles" class="idioma ativo">
-            <p> Industrial application </p> <br>
+            <h1> Hydraulic automation </h1>
+            <p> Industrial application </p>
           </div>
         </div>
+
         <div class="portfolio-metade">
           <div class="portfolio-imagem portfolio-imagem3">
             <div id="portugues" class="idioma">
@@ -202,28 +247,34 @@
             </div>
           </div>
         </div>
-        <div class="portfolio-metade">
-          <div class="portfolio-imagem portfolio-imagem3a">
+        <div class="quadro">
+          <div class="quadro-interno">
+            <div class="carrosel carrosel3">
+              <img src="../img/portfolio/p3a.png" alt="">
+              <img src="../img/portfolio/p3b.png" alt="">
+              <img src="../img/portfolio/p3c.png" alt="">
+            </div>
+          </div>
+          <div class="botoes">
+            <button id="bot3-1"></button>
+            <button id="bot3-2"></button>
+            <button id="bot3-3"></button>
           </div>
         </div>
       </section>
 
       <section class="portfolio" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
-        <div id="portugues" class="idioma">
-          <h1> Controle proporcional em sistema pneumático </h1>
-        </div>
-        <div id="ingles" class="idioma ativo">
-          <h1> Proportional control in pneumatic system </h1>
-        </div>
-
-        <div class="portfolio-subtitulo">
+        <div class="portfolio-titulo">
           <div id="portugues" class="idioma">
-            <p> Controle para hidrelétricas </p> <br>
+            <h1> Controle proporcional em sistema pneumático </h1>
+            <p> Controle para hidrelétricas </p>
           </div>
           <div id="ingles" class="idioma ativo">
-            <p> Control for hydropower generation system </p> <br>
+            <h1> Proportional control in pneumatic system </h1>
+            <p> Control for hydropower generation system </p>
           </div>
         </div>
+
         <div class="portfolio-metade">
           <div class="portfolio-imagem portfolio-imagem4">
             <div id="portugues" class="idioma">
@@ -242,8 +293,74 @@
             </div>
           </div>
         </div>
+        <div class="quadro">
+          <div class="quadro-interno">
+            <div class="carrosel carrosel4">
+              <img src="../img/portfolio/p4a.gif" alt="">
+              <img src="../img/portfolio/p4b.png" alt="">
+              <img src="../img/portfolio/p4c.png" alt="">
+              <img src="../img/portfolio/p4d.png" alt="">
+              <img src="../img/portfolio/p4e.png" alt="">
+              <img src="../img/portfolio/p4f.png" alt="">
+              <img src="../img/portfolio/p4g.png" alt="">
+            </div>
+          </div>
+          <div class="botoes">
+            <button id="bot4-1"></button>
+            <button id="bot4-2"></button>
+            <button id="bot4-3"></button>
+            <button id="bot4-4"></button>
+            <button id="bot4-5"></button>
+            <button id="bot4-6"></button>
+            <button id="bot4-7"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+        <div class="portfolio-titulo">
+          <div id="portugues" class="idioma">
+            <h1> Automação de sistema pneumático </h1>
+            <p>  Bancada didática </p>
+          </div>
+          <div id="ingles" class="idioma ativo">
+            <h1> Pneumatic system automation </h1>
+            <p> Test bench </p>
+          </div>
+        </div>
+
         <div class="portfolio-metade">
-          <div class="portfolio-imagem portfolio-imagem4a">
+          <div class="portfolio-imagem portfolio-imagem5">
+            <div id="portugues" class="idioma">
+              <!-- <p> &#10094; Projeto &#10095; </p> -->
+            </div>
+            <div id="ingles" class="idioma ativo">
+              <!-- <p> &#10094; Design &#10095; </p> -->
+            </div>
+          </div>
+          <div class="portfolio-chaves">
+            <div id="portugues" class="idioma">
+              Pneumática | Automação | Experimento <br>
+            </div>
+            <div id="ingles" class="idioma ativo">
+              Pneumatics | Automation | Experiment <br>
+            </div>
+          </div>
+        </div>
+        <div class="quadro">
+          <div class="quadro-interno">
+            <div class="carrosel carrosel5">
+              <img src="../img/portfolio/p5a.png" alt="">
+              <img src="../img/portfolio/p5b.png" alt="">
+              <img src="../img/portfolio/p5c.png" alt="">
+              <img src="../img/portfolio/p5d.png" alt="">
+            </div>
+          </div>
+          <div class="botoes">
+            <button id="bot5-1"></button>
+            <button id="bot5-2"></button>
+            <button id="bot5-3"></button>
+            <button id="bot5-4"></button>
           </div>
         </div>
       </section>
@@ -271,7 +388,7 @@
 
             <div class="rodape-atendimento">
               <div class="sobre-imagem">
-                <img class="foto" src="../img/portfolio/img5.jpg">
+                <img class="foto" src="../img/img5.jpg">
               </div>
 
               <div id="portugues" class="idioma">
@@ -309,13 +426,20 @@
   </main>
 
   <div class="rodape-3">
-    <img class="icone" src="../img/portfolio/crea.jpg">
+    <img class="icone" src="../img/crea.svg">
   </div>
 </div> <!-- div do content -->
 
 <script>
   AOS.init();
 </script>
+
+<!-- para o efeito carrosel (só funciona aqui) -->
+<script type="text/javascript" src="../js/carrosel.js"></script>
+<script type="text/javascript" src="../js/carrosel2.js"></script>
+<script type="text/javascript" src="../js/carrosel3.js"></script>
+<script type="text/javascript" src="../js/carrosel4.js"></script>
+<script type="text/javascript" src="../js/carrosel5.js"></script>
 
 </body>
 </html>
