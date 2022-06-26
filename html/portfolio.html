@@ -1,445 +1,275 @@
-<!-- -->
+
 <!DOCTYPE html>
 
 <html lang="pt-br">
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1">
+
+  <!--Informações do navegador-->
   <link rel="icon" href="../img/icone-logo.svg">
-  <title> Nicodemos de Farias </title>
+  <title>Nicodemos de Farias</title>
 
-  <script type="text/javascript" src="../js/jquery.min.js"></script>
-
-  <!-- Efeito: Animate On Scroll -->
-  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
+  <!--css-->
   <link rel="stylesheet" type="text/css" href="../css/main.css">
   <link rel="stylesheet" type="text/css" href="../css/portfolio.css">
 
-  <script type="text/javascript" src="../js/script.js"></script>
-  <script type="text/javascript" src="../js/app2.js"></script>
-  <script type="text/javascript" src="../js/app3.js"></script>
-  <script type="text/javascript" src="../js/carregamento.js"></script>
-
-  <!-- para a fonte do titulo -->
+  <!--fontes-->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Righteous" rel="stylesheet">
 
-  <meta charset="utf-8">
-  <meta name="viewpoint" content="width=device-width, initial-scale=1">
+  <!--JQuery-->
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+
+  <!--javascript-->
+  <script type="text/javascript" src="../js/script.js"></script>
+  <script type="text/javascript" src="../js/carregamento.js"></script>
+
+  <!--Efeito Animate On Scroll-->
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
 
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap');
+</style>
+
 <body>
-  <div class="loader"> <!-- Div para funcionar carregamento -->
+  <div class="loader"> <!--Div para funcionar carregamento-->
     <div> </div>
   </div>
-  <div class="content"> <!-- Div para funcionar carregamento -->
-  <header>
-    <div class="titulo" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
-      <a href="../index.html"> Nicodemos de Farias </a>
-    </div>
-    <div class="menu">
-      <a href="../index.html"> HOME - </a>
-      <a href="html/portfolio.html"> PORTFOLIO </a>
-    </div>
-    <div class="idioma-seletor" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
-      <a href="#" id="portugues" class="mudar-idioma"> PT </a>
-      <a href="#" id="ingles" class="mudar-idioma"> EN </a>
-    </div>
-  </header>
+  <div class="content"> <!--Div para funcionar carregamento-->
 
-  <main>
-    <div class="meio">
-      <div class="imagem">
-        <div class="mensagem">
-          <div class="mensagem-texto">
-            <br>
-            <div id="portugues" class="idioma">
-              <p class="destaque-branco"> Portfolio </p>
-              <p class="destaque-amarelo">  </p>
-            </div>
-            <div id="ingles" class="idioma ativo">
-              <p class="destaque-branco"> Portfolio </p>
-              <p class="destaque-amarelo">  </p>
-            </div>
-          </div>
-        </div>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <h1 class="logo"> <a href="../index.html"><span class="eng">ENG</span>Nicodemos</a> </h1>
+        <ul class="navbar-items">
+          <li><a class="btn-menu btn-menu-bottom" href="../index.html">Início</a></li>
+          <li><a class="btn-menu btn-menu-bottom" href="atuacao.html">Atuação</a></li>
+          <li><a class="btn-menu btn-menu-bottom" href="portfolio.html">Portfolio</a></li>
+          <li><a class="btn-menu btn-menu-bottom" href="blog.html">Blog</a></li>
+          <li><a href="#" id="portugues" class="mudar-idioma">PT</a></li>
+          <li><a href="#" id="ingles" class="mudar-idioma">EN</a></li>
+        </ul>
       </div>
+    </nav>
 
-      <section class="atuacao">
-        <div class="atuacao-esquerda">
-          <div id="portugues" class="idioma">
-            <b> PROJETO EM ENGENHARIA </b>
-          </div>
-          <div id="ingles" class="idioma ativo">
-            <b> DESIGN IN INGINEERING </b>
-          </div>
+    <header class="showcase">
+      <div class="showcase-container">
+        <h2>Portfolio</h2>
+        <!--<a href="" class="btn">Saiba mais</a>-->
+      </div>
+     </header>
+
+    <main>
+        <hr>
+        <section class="galery" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+            <div class="headline">
+                <div id="portugues" class="idioma">Reaproveitamento de ar comprimido</div>
+                <div id="ingles" class="idioma ativo">Compressed air reuse</div>
+            </div>
+            <div class="galery-container">
+                <div>
+                    <img class="galery-image" src="../img/portfolio/p1.gif" alt="">
+                </div>
+                <div>
+                    <img class="galery-image" src="../img/portfolio/p1a.gif" alt="">
+                </div>
+                <div>
+                    <img class="galery-image" src="../img/portfolio/p1b.png" alt="">
+                </div>
+                <div>
+                    <img class="galery-image" src="../img/portfolio/p1c.png" alt="">
+                </div>
+                <div>
+                    <img class="galery-image" src="../img/portfolio/p1d.png" alt="">
+                </div>
+                <div>
+                    <img class="galery-image" src="../img/portfolio/p1e.png" alt="">
+                </div>
+                <div>
+                    <img class="galery-image" src="../img/portfolio/p1f.png" alt="">
+                </div>
+                <div>
+                    <img class="galery-image" src="../img/portfolio/p1g.png" alt="">
+                </div>
+                <div>
+                    <img class="galery-image" src="../img/portfolio/p1h.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="galery" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+        <div class="headline">
+          <div id="portugues" class="idioma">Hidráuica digital</div>
+          <div id="ingles" class="idioma ativo">Digital hydralics</div>
         </div>
-
-        <div class="atuacao-meio">
-          <div id="portugues" class="idioma">
-            <b> PROJETO DE MÁQUINAS </b>
-          </div>
-          <div id="ingles" class="idioma ativo">
-            <b> MACHINE DESIGN </b>
-          </div>
-        </div>
-
-        <div class='atuacao-direita'>
-          <div id="portugues" class="idioma">
-            <b> HIDRÁULICA E PNEUMÁTICA </b>
-          </div>
-          <div id="ingles" class="idioma ativo">
-            <b> HYDRAULICS AND PNEUMATICS </b>
-          </div>
+        <div class="galery-container">
+            <div>
+                <img class="galery-image" src="../img/portfolio/p2.gif" alt="">
+            </div>
+            <div>
+                <img class="galery-image" src="../img/portfolio/p2a.png" alt="">
+            </div>
+            <div>
+                <img class="galery-image" src="../img/portfolio/p2b.png" alt="">
+            </div>
+            <div>
+                <img class="galery-image" src="../img/portfolio/p2c.png" alt="">
+            </div>
+            <div>
+                <img class="galery-image" src="../img/portfolio/p2d.png" alt="">
+            </div>
+            <div>
+                <img class="galery-image" src="../img/portfolio/p2e.png" alt="">
+            </div>
         </div>
       </section>
+
+      <section class="portfolio" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+        <div class="headline">
+          <div id="portugues" class="idioma">Automação hidráuica</div>
+          <div id="ingles" class="idioma ativo">Hydraulic automation</div>
+        </div>
+        <div class="galery-container">
+            <div>
+                <img class="galery-image" src="../img/portfolio/p3.gif" alt="">
+            </div>
+            <div>
+                <img class="galery-image" src="../img/portfolio/p3a.png" alt="">
+            </div>
+            <div>
+                <img class="galery-image" src="../img/portfolio/p3b.png" alt="">
+            </div>
+            <div>
+                <img class="galery-image" src="../img/portfolio/p3c.png" alt="">
+            </div>
+        </div>
+      </section>
+
+      <section class="portfolio" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+        <div class="headline">
+          <div id="portugues" class="idioma">Controle em sistema pneumático</div>
+          <div id="ingles" class="idioma ativo">Pneumatic system control</div>
+        </div>
+        <div class="galery-container">
+            <div>
+                <img class="galery-image" src="../img/portfolio/p4.gif" alt="">
+            </div>
+            <div>
+                <img class="galery-image" src="../img/portfolio/p4a.gif" alt="">
+            </div>
+            <div>
+                <img class="galery-image" src="../img/portfolio/p4b.png" alt="">
+            </div>
+            <div>
+                <img class="galery-image" src="../img/portfolio/p4c.png" alt="">
+            </div>
+            <div>
+                <img class="galery-image" src="../img/portfolio/p4d.png" alt="">
+            </div>
+            <div>
+                <img class="galery-image" src="../img/portfolio/p4e.png" alt="">
+            </div>
+            <div>
+                <img class="galery-image" src="../img/portfolio/p4f.png" alt="">
+            </div>
+            <div>
+                <img class="galery-image" src="../img/portfolio/p4g.png" alt="">
+            </div>
+        </div>
+      </section>
+
+      <section class="portfolio" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+        <div class="headline">
+          <div id="portugues" class="idioma">Automação em sistema pneumático</div>
+          <div id="ingles" class="idioma ativo">Pneumatic system automation</div>
+        </div>
+        <div class="galery-container">
+            <div>
+                <img class="galery-image" src="../img/portfolio/p5.png" alt="">
+            </div>
+            <div>
+                <img class="galery-image" src="../img/portfolio/p5a.png" alt="">
+            </div>
+            <div>
+                <img class="galery-image" src="../img/portfolio/p5b.png" alt="">
+            </div>
+            <div>
+                <img class="galery-image" src="../img/portfolio/p5c.png" alt="">
+            </div>
+            <div>
+                <img class="galery-image" src="../img/portfolio/p5d.png" alt="">
+            </div>
+        </div>
+      </section>
+
+    <!--<section class="text">
+        <div class="headline">
+            <div id="portugues" class="idioma">Perguntas frequentes</div>
+            <div id="ingles" class="idioma ativo">Frequent asked questions</div>
+        </div>
+        <div id="portugues" class="idioma">
+            <p>Como vão ser as aulas?</p>
+            <p>On-line ou presencial caso você more em Florianópolis.</p>
+        </div>
+        <div id="ingles" class="idioma ativo">
+            <p>How will be the classes?</p>
+            <p>On-line or in your house if you live in Florianópolis.</p>
+        </div>
+        <br>
+        <div id="portugues" class="idioma">
+            <p>Como vão ser as aulas?</p>
+            <p>On-line ou presencial caso você more em Florianópolis.</p>
+        </div>
+        <div id="ingles" class="idioma ativo">
+            <p>How will be the classes?</p>
+            <p>On-line or in your house if you live in Florianópolis.</p>
+        </div>
+        <br>
+        <div id="portugues" class="idioma">
+            <p>Como vão ser as aulas?</p>
+            <p>On-line ou presencial caso você more em Florianópolis.</p>
+        </div>
+        <div id="ingles" class="idioma ativo">
+            <p>How will be the classes?</p>
+            <p>On-line or in your house if you live in Florianópolis.</p>
+        </div>
+    </section>-->
 
       <hr>
 
-      <section class="portfolio" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
-        <div class="portfolio-titulo">
-          <div id="portugues" class="idioma">
-            <h1> Reaproveitamento de ar comprimido em sistemas de automação </h1>
-            <p> Aplicação industrial </p>
-          </div>
-          <div id="ingles" class="idioma ativo">
-            <h1> Reuse of compressed air in automation systems </h1>
-            <p> Industrial application </p>
-          </div>
+      <section class="contact" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+        <div class="headline">
+          <div id="portugues" class="idioma">Contato</div>
+          <div id="ingles" class="idioma ativo">Contact</div>
         </div>
-
-        <div class="portfolio-metade">
-          <div class="portfolio-imagem portfolio-imagem1">
-            <div id="portugues" class="idioma">
-              <!-- <p> &#10094; Projeto &#10095; </p> -->
-            </div>
-            <div id="ingles" class="idioma ativo">
-              <!-- <p> &#10094; Design &#10095; </p> -->
-            </div>
+        <div class="contact-container">
+          <div class="contact-text">
+            <div id="portugues" class="idioma">Entre em contato.</div>
+            <div id="ingles" class="idioma ativo">Get in touch.</div>
           </div>
-          <div class="portfolio-chaves">
-            <div id="portugues" class="idioma">
-              Pneumática | Simulação | Automação <br>
-            </div>
-            <div id="ingles" class="idioma ativo">
-              Pneumatics | Simulation | Automation <br>
-            </div>
+          <div class="contact-info">
+            <div id="portugues" class="idioma"><b>Nicodemos de Farias</b><br>Engenheiro Mecânico<br>São José/SC<br>nicodemos.de.farias@gmail.com<br>(48) 99864-8439</div>
+            <div id="ingles" class="idioma ativo"><b>Nicodemos de Farias</b><br>Mechanical Engineer<br>São José/SC<br>nicodemos.de.farias@gmail.com<br>(48) 99864-8439</div>
           </div>
-        </div>
-
-        <!-- antes
-        <div class="portfolio-metade">
-          <div class="portfolio-imagem portfolio-imagem1">
-          </div>
-        </div> -->
-
-        <div class="quadro">
-          <div class="quadro-interno">
-            <!-- <div class="setas">
-              <button class="seta-e" id="bot-e"> &#10094; </button>
-              <button class="seta-d" id="bot-d"> &#10095; </button>
-            </div> -->
-            <div class="carrosel">
-              <img src="../img/portfolio/p1a.gif" alt="">
-              <img src="../img/portfolio/p1b.png" alt="">
-              <img src="../img/portfolio/p1c.png" alt="">
-              <img src="../img/portfolio/p1d.png" alt="">
-              <img src="../img/portfolio/p1e.png" alt="">
-              <img src="../img/portfolio/p1f.png" alt="">
-              <img src="../img/portfolio/p1g.png" alt="">
-            </div>
-          </div>
-          <div class="botoes">
-            <button id="bot1"></button>
-            <button id="bot2"></button>
-            <button id="bot3"></button>
-            <button id="bot4"></button>
-            <button id="bot5"></button>
-            <button id="bot6"></button>
-            <button id="bot7"></button>
-          </div>
-          <div id="portugues" class="idioma">
-            <p> Selecione um </p>
-          </div>
-          <div id="ingles" class="idioma ativo">
-            <p> Select one </p>
+          <div class="contact-resume">
+            <div id="portugues" class="idioma"><a href="https://my.indeed.com/p/nicodemosm-64nprdc" target="_blank">Currículo</a></div>
+            <div id="ingles" class="idioma ativo"><a href="https://my.indeed.com/p/nicodemosm-64nprdc" target="_blank">Resume</a></div>
           </div>
         </div>
       </section>
-
-      <section class="portfolio" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
-        <div class="portfolio-titulo">
-          <div id="portugues" class="idioma">
-            <h1> Hidráulica digital </h1>
-            <p> Modelo para simulação de controle de avião </p>
-          </div>
-          <div id="ingles" class="idioma ativo">
-            <h1> Digital hydraulics </h1>
-            <p> Model for aerospacial control simulation </p>
-          </div>
-        </div>
-
-        <div class="portfolio-metade">
-          <div class="portfolio-imagem portfolio-imagem2">
-            <div id="portugues" class="idioma">
-              <!-- <p> &#10094; Projeto &#10095; </p> -->
-            </div>
-            <div id="ingles" class="idioma ativo">
-              <!-- <p> &#10094; Design &#10095; </p> -->
-            </div>
-          </div>
-          <div class="portfolio-chaves">
-            <div id="portugues" class="idioma">
-              Hidráulica | Simulação | Tecnologia digital <br>
-            </div>
-            <div id="ingles" class="idioma ativo">
-              Hydraulics | Simulation | Digital technology <br>
-            </div>
-          </div>
-        </div>
-        <div class="quadro">
-          <div class="quadro-interno">
-            <div class="carrosel carrosel2">
-              <img src="../img/portfolio/p2a.png" alt="">
-              <img src="../img/portfolio/p2b.png" alt="">
-              <img src="../img/portfolio/p2c.png" alt="">
-              <img src="../img/portfolio/p2d.png" alt="">
-              <img src="../img/portfolio/p2e.png" alt="">
-            </div>
-          </div>
-          <div class="botoes">
-            <button id="bot2-1"></button>
-            <button id="bot2-2"></button>
-            <button id="bot2-3"></button>
-            <button id="bot2-4"></button>
-            <button id="bot2-5"></button>
-          </div>
-        </div>
-      </section>
-
-      <section class="portfolio" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
-        <div class="portfolio-titulo">
-          <div id="portugues" class="idioma">
-            <h1> Automação hidráulica </h1>
-            <p> Aplicação industrial </p>
-          </div>
-          <div id="ingles" class="idioma ativo">
-            <h1> Hydraulic automation </h1>
-            <p> Industrial application </p>
-          </div>
-        </div>
-
-        <div class="portfolio-metade">
-          <div class="portfolio-imagem portfolio-imagem3">
-            <div id="portugues" class="idioma">
-              <!-- <p> &#10094; Projeto &#10095; </p> -->
-            </div>
-            <div id="ingles" class="idioma ativo">
-              <!-- <p> &#10094; Design &#10095; </p> -->
-            </div>
-          </div>
-          <div class="portfolio-chaves">
-            <div id="portugues" class="idioma">
-              Hidráulica | Simulação | Indústria <br>
-            </div>
-            <div id="ingles" class="idioma ativo">
-              Hydraulics | Simulation | Industry <br>
-            </div>
-          </div>
-        </div>
-        <div class="quadro">
-          <div class="quadro-interno">
-            <div class="carrosel carrosel3">
-              <img src="../img/portfolio/p3a.png" alt="">
-              <img src="../img/portfolio/p3b.png" alt="">
-              <img src="../img/portfolio/p3c.png" alt="">
-            </div>
-          </div>
-          <div class="botoes">
-            <button id="bot3-1"></button>
-            <button id="bot3-2"></button>
-            <button id="bot3-3"></button>
-          </div>
-        </div>
-      </section>
-
-      <section class="portfolio" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
-        <div class="portfolio-titulo">
-          <div id="portugues" class="idioma">
-            <h1> Controle proporcional em sistema pneumático </h1>
-            <p> Controle para hidrelétricas </p>
-          </div>
-          <div id="ingles" class="idioma ativo">
-            <h1> Proportional control in pneumatic system </h1>
-            <p> Control for hydropower generation system </p>
-          </div>
-        </div>
-
-        <div class="portfolio-metade">
-          <div class="portfolio-imagem portfolio-imagem4">
-            <div id="portugues" class="idioma">
-              <!-- <p> &#10094; Projeto &#10095; </p> -->
-            </div>
-            <div id="ingles" class="idioma ativo">
-              <!-- <p> &#10094; Design &#10095; </p> -->
-            </div>
-          </div>
-          <div class="portfolio-chaves">
-            <div id="portugues" class="idioma">
-              Pneumática | Simulação | Controle | Experimento <br>
-            </div>
-            <div id="ingles" class="idioma ativo">
-              Pneumatics | Simulation | Control | Experiment <br>
-            </div>
-          </div>
-        </div>
-        <div class="quadro">
-          <div class="quadro-interno">
-            <div class="carrosel carrosel4">
-              <img src="../img/portfolio/p4a.gif" alt="">
-              <img src="../img/portfolio/p4b.png" alt="">
-              <img src="../img/portfolio/p4c.png" alt="">
-              <img src="../img/portfolio/p4d.png" alt="">
-              <img src="../img/portfolio/p4e.png" alt="">
-              <img src="../img/portfolio/p4f.png" alt="">
-              <img src="../img/portfolio/p4g.png" alt="">
-            </div>
-          </div>
-          <div class="botoes">
-            <button id="bot4-1"></button>
-            <button id="bot4-2"></button>
-            <button id="bot4-3"></button>
-            <button id="bot4-4"></button>
-            <button id="bot4-5"></button>
-            <button id="bot4-6"></button>
-            <button id="bot4-7"></button>
-          </div>
-        </div>
-      </section>
-
-      <section class="portfolio" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
-        <div class="portfolio-titulo">
-          <div id="portugues" class="idioma">
-            <h1> Automação de sistema pneumático </h1>
-            <p>  Bancada didática </p>
-          </div>
-          <div id="ingles" class="idioma ativo">
-            <h1> Pneumatic system automation </h1>
-            <p> Test bench </p>
-          </div>
-        </div>
-
-        <div class="portfolio-metade">
-          <div class="portfolio-imagem portfolio-imagem5">
-            <div id="portugues" class="idioma">
-              <!-- <p> &#10094; Projeto &#10095; </p> -->
-            </div>
-            <div id="ingles" class="idioma ativo">
-              <!-- <p> &#10094; Design &#10095; </p> -->
-            </div>
-          </div>
-          <div class="portfolio-chaves">
-            <div id="portugues" class="idioma">
-              Pneumática | Automação | Experimento <br>
-            </div>
-            <div id="ingles" class="idioma ativo">
-              Pneumatics | Automation | Experiment <br>
-            </div>
-          </div>
-        </div>
-        <div class="quadro">
-          <div class="quadro-interno">
-            <div class="carrosel carrosel5">
-              <img src="../img/portfolio/p5a.png" alt="">
-              <img src="../img/portfolio/p5b.png" alt="">
-              <img src="../img/portfolio/p5c.png" alt="">
-              <img src="../img/portfolio/p5d.png" alt="">
-            </div>
-          </div>
-          <div class="botoes">
-            <button id="bot5-1"></button>
-            <button id="bot5-2"></button>
-            <button id="bot5-3"></button>
-            <button id="bot5-4"></button>
-          </div>
-        </div>
-      </section>
-
-      <hr>
-
-      <footer>
-        <div class="rodape" id="contato"  data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
-          <div id="portugues" class="idioma">
-            <h1> Contato </h1>
-          </div>
-          <div id="ingles" class="idioma ativo">
-            <h1> Contact </h1>
-          </div>
-
-          <div class="rodape-texto">
-            <div id="portugues" class="idioma">
-              Entre em contato. Como posso ajudar?
-            </div>
-            <div id="ingles" class="idioma ativo">
-              Get in touch. How may I help you?
-            </div>
-
-            <br><br>
-
-            <div class="rodape-atendimento">
-              <div class="sobre-imagem">
-                <img class="foto" src="../img/img5.jpg">
-              </div>
-
-              <div id="portugues" class="idioma">
-                <b> Nicodemos de Farias </b> <br>
-                Engenheiro Mecânico <br>
-                São José - SC <br>
-                nicodemos.de.farias@gmail.com <br>
-                (48) 99864-8439
-              </div>
-              <div id="ingles" class="idioma ativo">
-                <b> Nicodemos de Farias </b> <br>
-                Mechanical Engineer <br>
-                São José/SC <br>
-                nicodemos.de.farias@gmail.com <br>
-                (48) 99864-8439
-              </div>
-
-            </div>
-
-
-          </div>
-        </div>
-        <div class="rodape2">
-          <div id="portugues" class="idioma">
-            <font size="2px"> 2022 por Nicodemos de Farias </font>
-          </div>
-          <div id="ingles" class="idioma ativo">
-            <font size="2px"> 2022 by  Nicodemos de Farias </font>
-          </div>
-
-        </div>
+      
+      <footer class="footer">
+          <div id="portugues" class="idioma"><font size="2px">2022 por Nicodemos de Farias</font></div>
+          <div id="ingles" class="idioma ativo"><font size="2px">2022 by  Nicodemos de Farias</font></div>
       </footer>
-
-    </div>
   </main>
-
-  <div class="rodape-3">
-    <img class="icone" src="../img/crea.svg">
-  </div>
-</div> <!-- div do content -->
+</div> <!--div do content-->
 
 <script>
   AOS.init();
 </script>
-
-<!-- para o efeito carrosel (só funciona aqui) -->
-<script type="text/javascript" src="../js/carrosel.js"></script>
-<script type="text/javascript" src="../js/carrosel2.js"></script>
-<script type="text/javascript" src="../js/carrosel3.js"></script>
-<script type="text/javascript" src="../js/carrosel4.js"></script>
-<script type="text/javascript" src="../js/carrosel5.js"></script>
 
 </body>
 </html>

@@ -1,5 +1,7 @@
 
-*{ /* remover padrões dos navegadores */
+/* REMOVER PADRÕES DOS NAVEGADORES */
+
+*{
     margin: 0; /* para tirar a barra na parte inferior */
     padding: 0;
     box-sizing: border-box;
@@ -12,222 +14,216 @@ html {
 body {
     position: static; /* por padrão já vem static */
     width: 100%;
-    /*font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
-    /* font-family: verdana */
-    /*font-family: Optima, sans-serif;*/
-    /*font-family: Gill Sans, sans-serif;*/
-    /*font-family: Trebuchet MS, sans-serif;*/
-    /*font-family: Arial Narrow, sans-serif;*/
-    /*font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;*/
-    font-family: Noto Sans, sans-serif;
-    font-style: normal; /* normal,italic,oblique */
+    font-family: 'Asap', sans-serif; /*Noto Sans*/
+    font-style: normal; /* normal, italic, oblique */
     font-weight: 200px;
     font-variant: normal; /* normal,small-caps */
     font-stretch: normal; /* condensed,semi-condensed,normal,semi-expanded,expanded */
-    background: #f1f1f1;
+    background: auto;
 }
 
-header {
-    position: static;
-    width: 1200px; /* antes = 300mm */
-    height: 60px;
-    background-color: auto;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: auto;
-    margin-bottom: 3mm;
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-    text-transform: auto;
-    text-decoration: none;  /*underline*/
-    font-size: 16px;
-    font-weight: bold;
-    font-style: normal;
-    font: auto;
-    letter-spacing: 2px;
-    line-height: 20px;
-    padding-left: 15px;
-    padding-top: 20px;
-    color: #0d3553;
+/* BARRA DE NAVEGAÇÃO */
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background: #111;
+    color: #eee;
+}
+
+.navbar-container {
+    width:95%;
+    height:100%;
+    margin:auto; /* Nesse caso centraliza: filho menor que pai */
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size:1rem;
+    /* font-family: righteous;*/
+    font-weight:normal; /*normal, bold, bolder, lighter*/
+    text-transform: uppercase;
+}
+
+.eng {
+    font-size: 1rem;
+    color: #209090;
+}
+
+.navbar-items {
+    display: flex;
+    list-style: none; /* Sem as bolinhas */
+    text-transform: uppercase;
+}
+
+.navbar-items li {
+    margin-left: 10px;
+}
+
+.navbar-items li a { /* para aumentar área de click */
+    display: block;
+    padding:10px;
+    background-color: auto;
+}
+
+.navbar-items li:hover {
+    cursor: pointer;
+    /*color: darkorange;*/
+}
+
+/* EFEITO SUBLINHAR DE BAIXO*/
+
+.btn-menu {
+    position: relative;
+}
+
+.btn-menu::after {
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 0.17rem;
+    background: darkorange;
+    left: 0;
+    bottom: 0;
+}
+
+.btn-menu-bottom {
+    overflow: hidden;
+}
+
+.btn-menu-bottom::after {
+    transform: translateY(3px); /*não é a espessura da borda*/
+    transition: transform 0.3s ease;
+}
+
+.btn-menu-bottom:hover::after {
+    transform: translateY(0);
+}
+
+/*.btn-menu-center::after {
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+.btn-menu-center:hover::after {
+    transform: scale(1, 1);
+}*/
+
+/* Seletor de idioma */
+/* https://stackoverflow.com/questions/59196117/toggle-language-between-divs */
+
+div.idioma { /* Necessário para funcionar */
+    display: none;
+}
+
+div.idioma.ativo { /* Necessário para funcionar */
+    display: block;
+}
+
+a.mudar-idioma {
+    color: darkorange;
+}
+
+/* IMAGEM DE APRESENTAÇÃO */
+
+.showcase {
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#111;
+    background-image:url('../img/capa.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+}
+
+.showcase-container {
+    text-align:center;
+}
+
+.showcase-container h2 {
+    font-size:2.5rem;
+}
+
+.showcase-container p {
+    font-size: 1.2rem;
+    padding: 7px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background: #eee;
+    color: #111;
+    border-radius: 5px;
+    /* transition: background 500ms ease; */
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: #fff;
 }
 
 /* Div de carregamento enquanto a página carrega completamente */
 /* fonte: Show Loading Div While The Page Loads Completely | HTML, CSS, jQuery (youtube) */
 .content {
-  display: none;
+    display: none;
 }
 
 .loader {
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  background-color: #16191e;
-  position: absolute;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #16191e;
+    position: absolute;
 }
 
 .loader>div {
-  height: 100px;
-  width: 100px;
-  border: 10px solid #45474b;
-  border-top-color: #2a88e6;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-radius: 50%;
-  animation: spin 1s infinite linear;
+    height: 100px;
+    width: 100px;
+    border: 10px solid #45474b;
+    border-top-color: #2a88e6;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    animation: spin 1s infinite linear;
 }
 
 @keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/* Titulo */
-.titulo {
-  /* font-family: "Segoe UI", Arial, sans-serif;*/
-  font-family: righteous;
-  text-transform: uppercase;
-  font-size: 1em;
-  font-weight: lighter;
-
-  position: static;
-  float: left;
-  width: 500px;
-  height: auto;
-  background-color: auto;
-
-  border-style: solid;
-  border-radius: 0px;
-  border-width: 0px;
-  border-color: steelblue;
-
-  padding-left: 4px;
-
-  margin-top: 20px;
-}
-
-.titulo a {
-  text-decoration: none;
-}
-
-/* Menu */
-.menu {
-  display: inline-block;
-  margin-top: 20px;
-}
-
-.menu a {
-  text-decoration: none;
-  color: #0d3553;
+    100% {
+      transform: rotate(360deg);
+    }
 }
 
 /* Seletor de idioma */
 /* https://stackoverflow.com/questions/59196117/toggle-language-between-divs */
-div.idioma {
-  display: none;
+
+div.idioma { /* Necessário para funcionar */
+    display: none;
 }
 
-div.idioma.ativo {
-  display: block;
+div.idioma.ativo { /* Necessário para funcionar */
+    display: block;
 }
 
 a.mudar-idioma {
-  display: inline-block;
-  width: 35px;
-  height: 25px;
-
-  padding: 1px 6px;
-  border: 0px solid;
-  border-radius: 7px;
-
-  font: auto; /* caption */
-  font-style: auto;
-  font-size: 15px;
-  font-weight: bold;
-  text-decoration: auto;
-  text-transform: auto;
-  letter-spacing: 2px;
-  line-height: auto;
-
-  background-color: auto;
   color: darkorange;
-
-  margin-top: 18px; /* antes: 12px */
-}
-
-.idioma-seletor a:hover {
-  cursor: pointer;
-  background-color: #e4e4e4;
-}
-
-div.idioma-seletor {
-  position: static;
-  width: 90px;
-  float: right;
-}
-
-.imagem {
-    height: auto;
-    padding: 0px;
-    text-align: center;
-    color: #f1f1f1;
-    margin-top: auto;
-
-    /*border-bottom: 4px solid red;*/
-}
-
-.mensagem {
-    position: static;
-    padding-top: 40px;
-    width: 100%;
-    height: 250px;
-    border-radius: auto;
-    border-top-left-radius: 15px; /* Para evitar borda branca <20px */
-    border-top-right-radius: 15px; /* Para evitar borda branca <20px */
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-
-    background-image: url('../img/desenho1.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-color: #0d3553;
-    background-blend-mode: overlay;
-
-    /*background-image: radial-gradient(130% 30% ellipse at bottom, steelblue -10%,#0d3553 50%)*/
-
-    /*background-color: rgb(82,136,217,0.5); /*https://www.rapidtables.com/convert/color/hex-to-rgb.html*/
-    /*background-color: rgb(82,136,217); 0,63,68 ; 8,37,41*/
-    /*opacity: 0.8; /*não funciona se tiver texto */
-
-    border-bottom-style: solid;
-    border-bottom-color: red;
-    border-bottom-width: 2px;
-}
-
-.mensagem-texto {
-    position: static;
-}
-
-.destaque-branco {
-    font: auto; /* caption */
-    font-style: auto;
-    font-size: 32px;
-    font-weight: 100px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    line-height: 45px;
-    color: #f1f1f1;
-}
-
-.destaque-amarelo {
-    font-size: 25px;
-    color: #cc9900;
 }
 
 main {
@@ -237,422 +233,191 @@ main {
     background-color: auto;
 }
 
-.meio {
-    width: 1200px; /*300mm = 1130px, total = 1348px*/
-    margin: 0 auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
-
-    border-style: solid;
-    border-radius: 20px;
-    border-width: 0px;
-    border-color: auto;
-
-    background-color: #f1f1f1;
-}
-
-.atuacao {
-  position: static;
-  margin-top: 0px;
-  width: 100%;
-  height: 240px;
-  background-color: auto;
-}
-
-.atuacao::before{
-  width: auto;
-  height: 0px;
-  display: inline-block;
-  content: '';
-  margin: 0 auto;
-  background-color: blue;
-}
-
-.atuacao-esquerda {
-    position: static;
-    float: left;
-    padding-top: 20px;
-    padding-left: 25px;
-    width: 33.3333%; /*325px*/
-    height: 180px;
-    display: inline-block;
-    text-align: left;
-    background-color: #e4e4e4; /*rgb(90,150,200)*/
-    color: #222222;
-
-    border-right-style: solid;
-    border-right-color: #cccccc;
-    border-right-width: 2px;
-
-    border-bottom-left-radius: 15px;
-
-    line-height: 28px;
-}
-
-.atuacao-meio {
-    position: static;
-    float: left;
-    padding-top: 20px;
-    padding-left: 55px;
-    padding-right: 55px;
-    width: 33.3333%; /*7.1cm*/
-    height: 180px;
-    display: inline-block;
-    text-align: left;
-    background-color: #e4e4e4;
-    color: #222222;
-
-    border-right-style: solid;
-    border-right-color: #cccccc;
-    border-right-width: 2px;
-
-    line-height: 28px;
-}
-
-.atuacao-direita {
-    position: static;
-    float: right;
-    padding-top: 20px;
-    padding-left: 65px;
-    width: 33.3333%; /*auto*/
-    height: 180px;
-    display: inline-block;
-    text-align: left;
-    background-color: #e4e4e4;
-    color: #222222;
-
-    border-bottom-right-radius: 15px;
-
-    line-height: 28px;
-}
-
-.servicos {
-    position: static; /* nesse tipo posso usar left: 10px ou top: 10px para ajustar */
-    width: 100%;
-    background-color: auto;
-}
-
-.servicos h1{
+.headline {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: normal;
     text-align: center;
-    color: #333333;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    letter-spacing: 2px;
 }
 
-.servicos-subtitulo {
-    text-align: center;
-}
-
-main hr {
-    font-size: 1px;
+hr {
     width: 100px;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: auto;
-
     border-style: solid;
     border-width: 2px;
-    border-color: steelblue; /*#7D18FD*/
+    border-color: steelblue;
 }
 
-.servicos::before, .servicos::after{
-    width: 100%;
-    height: 30px;
-    display: inline-block;
-    content: '';
-    margin: 0 auto;
-    background-color: auto;
+.text {
+    width: 90%;
+    margin: auto;
+    padding-top: 40px;
 }
 
-ul {
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-li {
-  padding-left: 2.3em;
-  text-indent: -1.25em;
-}
-
-li:before {
-  content: "\2713"; /* triangulo: "\25B7" */
-  padding-right: 4px;
-  color: steelblue;
-}
-
-.serv-1 {
-    width: 50%; /*540px*/
-    float: left;
-    background-color: auto;
-
-    display: inline-block;
-    margin-left: 0px;
-    margin-right: auto;
-
-    padding-left: 30px;
-}
-
-.serv-2 {
-  position: static;
-  float: auto;
-  width: 450px;
-  color: #234567;
-  background-color: auto;
-
-  display: block;
-  margin-left: 0px;
-  margin-top: 20px;
-  margin-right: 0px;
-}
-
-.serv-3 {
-  position: static;
-  float: auto;
-  width: 180px;
-  height: 35px;
-
-  margin-top: 10px;
-  margin-bottom: 20px;
-
-  padding-top: 5px;
-  padding-left: 0px;
-
-  border-style: solid;
-  border-radius: 17.5px;
-  border-width: 0px;
-  border-color: #0d3553;
-  background-color: auto;
-
-  /*background-image: radial-gradient(130% 30% ellipse at bottom, steelblue -10%, #0d3553 50%)*/
-}
-
-.serv-3 a {
-  color: blue;
-  text-decoration: none;
-}
-
-.serv-3 a:hover {
-  cursor: pointer;
-}
-
-.servicos-imagem {
-    position: static;
-    float: auto;
-    width: 500px;
-    height: 130px;
-
-    display: block; /* para centralizar: block */
-    margin-left: 0px; /* para centralizar: auto */
-    margin-top: 20px; /* para centralizar: auto */
-    margin-right: 0px;
-    color: white;
-
-    border-radius: 10px;
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-.servicos-imagem1 {
-    background-image: url('../img/img1.jpg');
-    background-position: center;
-}
-
-.servicos-imagem2 {
-    background-image: url('../img/img2.jpg');
-}
-
-.servicos-imagem3 {
-    background-image: url('../img/img3-1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-}
-
-.servicos-imagem4 {
-    background-image: url('../img/img4.jpg');
-}
-
-.servicos-imagem p {
-    font-size: 15px; /*20px*/
+.text p {
+    font-size: 1.2rem;
+    text-transform: none;
     font-weight: normal;
-    letter-spacing: 1px;
-    padding-top: 5px;
-    width: 195px;
-    height: 35px;
-    background-color: rgb(22, 70, 70, 0.9); /*51 51 51*/
+    font-style: normal;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
 
-    border-radius: 0px;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+.text b {
+    color: blue;
+}
 
+.services-container div {
+    border: red 0px solid;
+    padding: 10px;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.services-box-1 img {
+    border-radius: 5px;
+}
+
+.services-box-2 {
+    max-width: 450px;
+}
+
+.services-box-2 p {
+    padding-bottom: 10px;
+}
+
+.services-item {
     text-align: center;
 }
 
-.serv-descricao {
-    position: static;
-    float: left;
-    width: 50%;
-
-    display: inline-block; /* para centralizar: block */
-    margin-left: 0px; /* para centralizar:auto */
-    margin-top: 0px; /* para centralizar:auto */
-
-    padding-top: 16px;
-    padding-right: 20px;
-
-    line-height: 27px;
-    background-color: auto;
+.services-item h3 {
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background: #eee;
+    color: #111;
+    border-radius: 25px;
+    /* transition: background 500ms ease; */
 }
 
-.sobre-imagem {
+/* SOBRE */
+
+.about-container div {
+  border: red 0px solid;
+  padding: 10px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-box-1 {
+  align-items: flex-start;
   width: 150px;
   height: 150px;
-  float: left;
-  margin-left: 0px;
-  background-color: auto;
 }
 
-.foto {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
+.about-box-2 {
+  width: 450px;
+}
 
+.photo {
   border-radius: 50%; /* para imagem em formato circular */
 }
 
-/* border-style: solid; */
-/* border-width: 1px;  */
-/* border-left-width: 1px; */
-/* border-radius: 5px; */
-/* border-color: #3366FF; */
+/* GALERIA */
 
-.galeria {
-    position: static;
-    background-color: auto;
-    text-align: center;
+.galery-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px; /*para não usar toda a extensão em telas grandes*/
+  margin: 0 auto; /*para centralizar o todo*/
 }
 
-.galeria::before, .galeria::after{
-    width: 100%;
-    height: 30px;
-    display: inline-block;
-    content: '';
-    margin: 0 auto;
-    background-color: auto;
-}
-
-.galeria h1 {
-    text-align: center;
-    color: #333333;
-}
-
-div.galeria-titulo {
-  background-color: pink;
-  margin-top: 40px;
-}
-
-div.galeria-fig {
-  display: inline-block;
-  float: left;
-  width: 28.75%;
-  height: auto;
-  background-color: auto;
-  margin-left: 3.33%;
-
-  margin-bottom: 10px;
-}
-
-div.galeria-figuras {
-  background-color: auto;
-  height: 350px;
-}
-
-img.galeria-fig {
-  display: inline-block;
-  float: left;
-  width: 370px; /* antes=28.75% */
-  margin-left: 22.5px; /* antes=3.33% */
-  height: auto;
-  border-radius: 5px;
-  background-color: pink;
-}
-
-.buttons {
-  height: 40px;
-  padding-top: 9px;
-  background-color: auto;
-}
-
-.showSingle {
-  display: inline-block;
-  width: 220px;
-  background-color: auto;
-}
-
-.buttons a {
-  color: steelblue;
-}
-
-.buttons a:hover {
-  cursor: pointer;
-}
-
-.regua1 {
-  margin-left: 265px;
-  width: 220px;
-}
-
-.regua2 {
-  margin-left: 490px;
-  width: 220px;
-}
-
-.regua3 {
-  margin-left: 714px;
-  width: 220px;
-}
-
-.rodape {
-    position: static;
-    width: auto;
-    height: auto;
-    text-align: center;
-    color: black; /* todo conteúdo adicionado aqui dentro */
-    background-color: inherit;
-}
-
-.rodape::before{
-    width: auto;
-    height: 30px;
-    display: inline-block;
-    content: '';
-    margin: 0 auto;
-    background-color: auto;
-}
-
-.rodape::after{
-    width: auto;
-    height: 10px;
-    display: inline-block;
-    content: '';
-    margin: 0 auto;
-    background-color: auto;
-}
-
-.rodape-texto {
-  position: static;
-  width: 250mm;
+img { /* As imagens se expandem até o tamanho máximo delas */
+  max-width: 100%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: inherit;
-  text-align: auto;
 }
 
-.rodape-atendimento {
+.galery-container > div {
+  flex-grow: 1; /* pode crescer */
+  flex-shrink: 1; /* pode diminuir */
+  flex-basis: 250px; /* tem que ter essa base, se não tiver quebra */
+  margin: 10px;
+}
+
+.galery-image {
+  border-radius: 5px;
+}
+
+.galery-container p {
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* CONTATO */
+
+.contact {
+  text-align: center;
+}
+
+.contact-container div {
+  padding: 5px;
+}
+
+.contact-container {
+  display: block;
+}
+
+.contact-text {
+  color: orange;
+}
+
+.contact-resume {
+  margin: 20px 20px;
+}
+
+.contact-resume a {
+  color: white;
+
+  padding: 10px 30px;
+
+  border-color: #209090;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  background-color: #209090;
+
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+/* RODAPE */
+
+.footer{
+  background:#222;
+  color:#eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.box-1 {
   position: static;
   width: 11cm;
   height: 5.5cm;
@@ -667,76 +432,4 @@ img.galeria-fig {
   padding-top: 0.5cm;
 
   box-shadow: rgba(0, 0, 0, 0) 0px 3px 8px; /* antes (0,0,0,0.24) */
-}
-
-div.rodape-curriculo {
-  position: static;
-
-  font-weight: bold;
-  text-transform: uppercase;
-  font-style: italic;
-
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  padding-top: 5px;
-
-  width: 120px;
-  height: 35px;
-
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 10px;
-  border-color: darkblue;
-  background-color: auto;
-}
-
-.rodape-curriculo a {
-  text-decoration: none;
-  color: darkblue;
-}
-
-.rodape2 {
-    position: static;
-    width: auto;
-    height: 40px;
-    text-align: center;
-    padding-top: 8px;
-    color: #f1f1f1;
-    background-color: #0d3553;
-
-    border-style: solid;
-
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-bottom-width: 0px;
-
-    border-left-width: 0px;
-    border-right-width: 0px;
-
-    border-top-width: 2px;
-    border-top-color: red;
-
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-}
-
-.rodape-3 {
-  position: static;
-  width: 300mm;
-  height: auto;
-  background-color: auto;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 5mm;
-  margin-bottom: 5mm;
-  padding-left: 0px;
-}
-
-img.icone {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
 }

@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+
+    <!--Informações do navegador-->
+    <link rel="icon" href="../img/icone-logo.svg">
+    <title>Nicodemos de Farias</title>
+
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/atuacao.css">
+    <link rel="stylesheet" type="text/css" href="../css/blog.css">
+
+    <!--fontes-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Righteous" rel="stylesheet">
+
+    <!--JQuery-->
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+
+    <!--javascript-->
+    <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="../js/carregamento.js"></script>
+
+    <!--Efeito Animate On Scroll-->
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap');
+</style>
+
+<body>
+    <div class="loader"> <!--Div para funcionar o carregamento-->
+        <div> </div>
+    </div>
+    <div class="content"> <!--Div para funcionar o carregamento-->
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h1 class="logo"><a href="../index.html"><span class="eng">ENG</span>Nicodemos</a></h1>
+            <ul class="navbar-items">
+                <li><a class="btn-menu btn-menu-bottom" href="../index.html">Início</a></li>
+                <li><a class="btn-menu btn-menu-bottom" href="atuacao.html">Atuação</a></li>
+                <li><a class="btn-menu btn-menu-bottom" href="portfolio.html">Portfolio</a></li>
+                <li><a class="btn-menu btn-menu-bottom" href="blog.html">Blog</a></li>
+                <li><a href="#" id="portugues" class="mudar-idioma">PT</a></li>
+                <li><a href="#" id="ingles" class="mudar-idioma">EN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="showcase">
+        <div class="showcase-container">
+            <h2>Blog</h2>
+            <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, voluptatibus!</p>-->
+            <!--<a href="" class="btn">Saiba mais</a>-->
+        </div>
+    </header>
+
+    <main>
+        <hr>
+      
+
+        <hr>
+
+        <section class="contact" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+        <div class="headline">
+            <div id="portugues" class="idioma">Contato</div>
+            <div id="ingles" class="idioma ativo">Contact</div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-text">
+                <div id="portugues" class="idioma">Entre em contato.</div>
+                <div id="ingles" class="idioma ativo">Get in touch.</div>
+            </div>
+            <div class="contact-info">
+                <div id="portugues" class="idioma"><b>Nicodemos de Farias</b><br>Engenheiro Mecânico<br>São José/SC<br>nicodemos.de.farias@gmail.com<br>(48) 99864-8439</div>
+                <div id="ingles" class="idioma ativo"><b>Nicodemos de Farias</b><br>Mechanical Engineer<br>São José/SC<br>nicodemos.de.farias@gmail.com<br>(48) 99864-8439</div>
+            </div>
+            <div class="contact-resume">
+                <div id="portugues" class="idioma"><a href="https://my.indeed.com/p/nicodemosm-64nprdc" target="_blank">Currículo</a></div>
+                <div id="ingles" class="idioma ativo"><a href="https://my.indeed.com/p/nicodemosm-64nprdc" target="_blank">Resume</a></div>
+            </div>
+        </div>
+      </section>
+      
+      <footer class="footer">
+          <div id="portugues" class="idioma"><font size="2px">2022 por Nicodemos de Farias</font></div>
+          <div id="ingles" class="idioma ativo"><font size="2px">2022 by  Nicodemos de Farias</font></div>
+      </footer>
+
+  </main>
+</div><!--div do content-->
+<!--efeito:Animate On Scroll-->
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

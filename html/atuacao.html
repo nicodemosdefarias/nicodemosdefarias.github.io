@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1">
+
+  <!--Informações do navegador-->
+  <link rel="icon" href="../img/icone-logo.svg">
+  <title>Nicodemos de Farias</title>
+
+  <!--css-->
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <link rel="stylesheet" type="text/css" href="../css/atuacao.css">
+
+  <!--fontes-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Righteous" rel="stylesheet">
+
+  <!--JQuery-->
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+
+  <!--javascript-->
+  <script type="text/javascript" src="../js/script.js"></script>
+  <script type="text/javascript" src="../js/carregamento.js"></script>
+
+  <!--Efeito Animate On Scroll-->
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap');
+</style>
+
+<body>
+  <div class="loader"> <!--Div para funcionar o carregamento-->
+    <div> </div>
+  </div>
+  <div class="content"> <!--Div para funcionar o carregamento-->
+
+    <nav class="navbar">
+      <div class="navbar-container">
+        <h1 class="logo"><a href="../index.html"><span class="eng">ENG</span>Nicodemos</a></h1>
+        <ul class="navbar-items">
+          <li><a class="btn-menu btn-menu-bottom" href="../index.html">Início</a></li>
+          <li><a class="btn-menu btn-menu-bottom" href="atuacao.html">Atuação</a></li>
+          <li><a class="btn-menu btn-menu-bottom" href="portfolio.html">Portfolio</a></li>
+          <li><a class="btn-menu btn-menu-bottom" href="blog.html">Blog</a></li>
+          <li><a href="#" id="portugues" class="mudar-idioma">PT</a></li>
+          <li><a href="#" id="ingles" class="mudar-idioma">EN</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  <header class="showcase">
+    <div class="showcase-container">
+      <h2>Atuação</h2>
+      <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, voluptatibus!</p>-->
+      <!--<a href="" class="btn">Saiba mais</a>-->
+    </div>
+  </header>
+
+  <main>
+      <hr>
+      <section class="areas" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+        <div class="headline">
+          <div id="portugues" class="idioma">Desenvolvimento do produto</div>
+          <div id="ingles" class="idioma ativo">Product development</div>
+        </div>
+        <div class="areas-container">
+          <div class="areas-box-1">
+            <!--<img src="../img/atuacao/img1.jpg" alt="" class="areas-item-1">-->
+            <div class="areas-item-1 areas-item-img1"></div>
+            <div id="portugues" class="idioma areas-item-2">A condução de projetos baseado em metodologias e sistematização dos processos assegura maior potencial de sucesso no desenvolvimento de novos produto.</div>
+            <div id="ingles" class="idioma ativo areas-item-2">Conducting projects based on methodologies and systematization of processes ensures greater potential for success in new product development.</div>
+          </div>
+            <div id="portugues" class="idioma areas-box-2">
+            <ul type="none">
+              <li>Aplicação de metodologia no desenvolvimento de novos produtos</li>
+              <li>Condução de reuniões estratégicas para o planejamento do projeto</li>
+              <li>Levantamento e classificação das especificações de projeto</li>
+              <li>Uso de ferramentas para o projeto conceitual (árvore de funções e meios, matriz morfológica)</li>
+              <li>Uso de modelos analíticos ou simulação computacional para avaliação dos conceitos gerados</li>
+              <li>Especificação das fases do projeto (entradas, atividades, ferramentas e entregas esperadas)</li>
+              <li>Elaboração e acompanhamento do cronograma de projeto</li>
+              <!--<li>Acompanhamento do custo do projeto</li>-->
+              <!--<li>Monitoramento de riscos do projeto</li>-->
+              <!--<li>Elaboração de Relatório de Progresso/curva S/Curva rundown de contigência</li>-->
+              <!--<li>Implementação de melhoria contínua de produtos e processos</li>-->
+            </ul>
+            </div>
+            <div id="ingles" class="idioma ativo areas-box-2">
+            <ul type="none">
+              <li>Application of methodology for new product development</li>
+              <li>Conducting strategic meetings for project planning</li>
+              <li>Project requirements survey and classification</li>
+              <li>Use of tools for conceptual design (function-means tree, morphological matrix)</li>
+              <li>Use of analytical models or computer simulation to evaluate new concepts</li>
+              <li>Project phases specification (inputs, activities, tools and expected deliverables)</li>
+              <li>Project schedule elaboration and monitoring</li>
+              <!--<li>Status report</li>-->
+            </ul>
+            </div>
+        </div>
+      </section>
+
+      <section class="areas" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+        <div class="headline">
+          <div id="portugues" class="idioma">Análise estrutural</div>
+          <div id="ingles" class="idioma ativo">Structural analysis</div>
+        </div>
+        <div class="areas-container">
+          <div class="areas-box-1">
+            <div class="areas-item-1 areas-item-img2"></div>
+            <div id="portugues" class="idioma areas-item-2">Para a criação de máquinas que realizem determinadas funções é necessário o uso de ferramentas de projetos adequadas desde a concepção até o detalahamento para fabricação.</div>
+            <div id="ingles" class="idioma ativo areas-item-2">In order to create machines that perform certain functions, it is necessary to use proper design tools from conception to technical production specifications.</div>
+          </div>
+          <div id="portugues" class="idioma areas-box-2">
+            <ul type="none">
+              <li>Modelagem 3D de componentes e sistemas</li>
+              <li>Análise computacional de tensões em componetes críticos</li>
+              <li>Cálculos analíticos de máquinas e estruturas</li>
+              <li>Seleção de material</li>
+              <li>Especificação de transmissões mecânicas e máquinas rotativas</li>
+              <li>Seleção de elementos de máquinas (correias, correntes, engrenagens, acoplamentos, entre outros)</li>
+              <li>Uso e adequação de padrões internacionais</li>
+            </ul>
+          </div>
+          <div id="ingles" class="idioma ativo areas-box-2">
+            <ul type="none">
+              <li>3D Modeling of components and systems</li>
+              <li>Computational stress analysis in critical components</li>
+              <li>Analytical calculation of machines and structures</li>
+              <li>Material selection</li>
+              <li>Specification of mechanical transmissions and rotating machines</li>
+              <li>Machine elements selection  (belts, chain drives, gears, coplings, among others)</li>
+              <li>Use and adequacy of international standards</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="areas" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+        <div class="headline">
+          <div id="portugues" class="idioma">Hidráulica e Pneumática</div>
+          <div id="ingles" class="idioma ativo">Hydraulics and Pneumatics</div>
+        </div>
+        <div class="areas-container">
+          <div class="areas-box-1">
+            <div class="areas-item-1 areas-item-img3"></div>
+            <div id="portugues" class="idioma areas-item-2">Em dúvida sobre o sistema de controle hidráulico ou pneumático mais adequado para a sua aplicação? Entre em contato para mais informações sobre esse ou outros serviços.</div>
+            <div id="ingles" class="idioma ativo areas-item-2">In doubt about the most suitable hydraulic or pneumatic control system for your application? Get in touch for more information on this or others services.</div>
+          </div>
+          <div id="portugues" class="idioma areas-box-2">
+            <ul type="none">
+              <li>Especificação técnica de componentes (unidades de potência, cilindros, válvulas, mangueiras, conexões)</li>
+              <li>Melhoria de projetos existentes do ponto de vista energético e operacional</li>
+              <li>Automação de processos usando acionamentos elétricos</li>
+              <li>Elaboração de manuais de operação de máquinas</li>
+              <li>Avaliação de eficiência energética</li>
+              <li>Modelagem e simulação dinâmica de sistemas</li>
+              <li>Suporte técnico para instalações</li>
+              <li>Identificação de problemas</li>
+              <li>Implementação de lógicas de acionamentos em CLP</li>
+              <li>Seleção de sensores e transdutores</li>
+              <!--<li>Uso e adequação de padrões internacionais</li>-->
+            </ul>
+          </div>
+          <div id="ingles" class="idioma ativo areas-box-2">
+            <ul type="none">
+              <li>Component technical specifications (power units, cylinders, valves, hoses, connectors)</li>
+              <li>Improvement of existing projects in terms of energy consumption and operability</li>
+              <li>Process automation using electric commands</li>
+              <li>Elaboration of machine operation manuals</li>
+              <li>Energy efficiency asssessment</li>
+              <li>Modelling and simulation of dynamic systems</li>
+              <li>Assembly technical support</li>
+              <li>Systems troubleshooting</li>
+              <li>PLC programming implementation</li>
+              <li>Selection of sensors and transducers</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="areas" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+        <div class="headline">
+          <div id="portugues" class="idioma"> Fabricação mecânica </div>
+          <div id="ingles" class="idioma ativo"> Mechanical production </div>
+        </div>
+        <div class="areas-container">
+          <div class="areas-box-1">
+            <div class="areas-item-1 areas-item-img4"></div>
+              <div id="portugues" class="idioma areas-item-2">O planejamento da manutenção eficiente representa o diferencial para empresas que buscam reduzir custos e aumentar a confiabilidade das suas instalações.</div>
+              <div id="ingles" class="idioma ativo areas-item-2">Efficient maintenance planning is imperative for companies that seek to reduce costs and increase the reliability of their facilities.</div>
+          </div>
+          <div id="portugues" class="idioma areas-box-2">
+            <ul type="none">
+              <li>Desenho 2D e 3D</li>
+              <li>Especificação de tolerâncias geométricas e dimensionais</li>
+              <li>Elaboração de projetos com adequação aos melhores processos de fabricação</li>
+              <li>Elaboração de lista de materiais</li>
+              <li>Dimensionamento de matéria-prima para fabricação de componentes</li>
+              <li>Suporte ao setor de produção</li>
+              <!--<li>Análise de falhas em sistemas de transmissão de potência mecânicos, hidráulicos e pneumáticos</li>
+              <li>Gestão de indicadores da manutenção</li>
+              <li>Elaboração de FMEA para equipamentos críticos</li>
+              <li>Melhoria de projetos para aumento da confiabilidade operacional</li>
+              <li>Coordenação das atividades da manutenção industrial</li>
+              <li>Treinamento da equipe de manutenção</li>
+              <li>Estudos para melhorias contínuas voltadas a manutenção e operação industrial</li>
+              <li>Controle de requisições de compras de componentes e serviços relacionados à manutenção</li>-->
+            </ul>
+          </div>
+          <div id="ingles" class="idioma ativo areas-box-2">
+            <ul type="none">
+              <li>2D e 3D drawing</li>
+              <li>Dimensional and geometric product specifications</li>
+              <li>Design for manufacture</li>
+              <li>Material list elaboration</li>
+              <li>Material sizing for component prodution</li>
+              <li>Production team suport</li>
+              <!--<li>Failure analysis in mechanical, hydraulic and pneumatic power transmission systems</li>
+              <li>Management of maintenance indicators</li>
+              <li>FMEA analysis for critical equipment</li>
+              <li>Designs improvements to increase operational reliability</li>
+              <li>Coordination of industrial maintenance activities</li>
+              <li>Maintenance team training</li>
+              <li>Studies for continuous improvement on industrial maintenance and operation</li>
+              <li>Control of purchase requisitions for components and services related to maintenance</li> -->
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="galery" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+        <div class="headline">
+          <div id="portugues" class="idioma"> Galeria </div>
+          <div id="ingles" class="idioma ativo"> Gallery </div>
+        </div>
+        <div class="galery-container">
+          <div>
+            <img class="galery-image" src="../img/portfolio/p1g.png" alt="">
+            <p>Industrial</p>
+          </div>
+          <div>
+            <img class="galery-image" src="../img/portfolio/p2e.png" alt="">
+            <p>Movimentação de materiais</p>
+          </div>
+          <div>
+            <img class="galery-image" src="../img/portfolio/p3.gif" alt="">
+            <p>Construção</p>
+          </div>
+          <div>
+            <img class="galery-image" src="../img/portfolio/p4f.png" alt="">
+            <p>Construção</p>
+          </div>
+          <div>
+            <img class="galery-image" src="../img/portfolio/p5d.png" alt="">
+            <p>Construção</p>
+          </div>
+          <div>
+            <img class="galery-image" src="../img/portfolio/p6.png" alt="">
+            <p>Construção</p>
+          </div>
+          <div id="portugues" class="idioma"><p>Mais detalhes no<a href="./html/portfolio.html"> PORTFÓLIO </a></p></div>
+          <div id="ingles" class="idioma ativo"><p>More details in<a href="./html/portfolio.html"> PORTFOLIO</a></p></div>
+        </div>
+        <br>
+      </section>
+
+      <hr>
+
+      <section class="contact" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+        <div class="headline">
+          <div id="portugues" class="idioma">Contato</div>
+          <div id="ingles" class="idioma ativo">Contact</div>
+        </div>
+        <div class="contact-container">
+          <div class="contact-text">
+            <div id="portugues" class="idioma">Entre em contato.</div>
+            <div id="ingles" class="idioma ativo">Get in touch.</div>
+          </div>
+          <div class="contact-info">
+            <div id="portugues" class="idioma"><b>Nicodemos de Farias</b><br>Engenheiro Mecânico<br>São José/SC<br>nicodemos.de.farias@gmail.com<br>(48) 99864-8439</div>
+            <div id="ingles" class="idioma ativo"><b>Nicodemos de Farias</b><br>Mechanical Engineer<br>São José/SC<br>nicodemos.de.farias@gmail.com<br>(48) 99864-8439</div>
+          </div>
+          <div class="contact-resume">
+            <div id="portugues" class="idioma"><a href="https://my.indeed.com/p/nicodemosm-64nprdc" target="_blank">Currículo</a></div>
+            <div id="ingles" class="idioma ativo"><a href="https://my.indeed.com/p/nicodemosm-64nprdc" target="_blank">Resume</a></div>
+          </div>
+        </div>
+      </section>
+      
+      <footer class="footer">
+          <div id="portugues" class="idioma"><font size="2px">2022 por Nicodemos de Farias</font></div>
+          <div id="ingles" class="idioma ativo"><font size="2px">2022 by  Nicodemos de Farias</font></div>
+      </footer>
+
+  </main>
+</div><!--div do content-->
+<!--efeito:Animate On Scroll-->
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

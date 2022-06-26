@@ -1,149 +1,53 @@
 
-.atuacao {
-  position: static;
-  margin-top: 0px;
-  width: 100%;
-  height: 120px;
-  background-color: auto;
-}
-
-.atuacao::before{
-  width: auto;
-  height: 0px;
-  display: inline-block;
-  content: '';
-  margin: 0 auto;
-  background-color: blue;
-}
-
-.atuacao-esquerda {
-    position: static;
-    float: left;
-    padding-top: 20px;
-    width: 33.3333%; /*325px*/
-    height: 70px;
-    display: inline-block;
-    text-align: center;
-    background-color: #e4e4e4; /*rgb(90,150,200)*/
-    color: #222222;
-
-    border-right-style: solid;
-    border-right-color: #cccccc;
-    border-right-width: 2px;
-
-    border-bottom-left-radius: 15px;
-
-    line-height: 28px;
-}
-
-.atuacao-meio {
-    position: static;
-    float: left;
-    padding-top: 20px;
-    width: 33.3333%; /*7.1cm*/
-    height: 70px;
-    display: inline-block;
-    text-align: center;
-    background-color: #e4e4e4;
-    color: #222222;
-
-    border-right-style: solid;
-    border-right-color: #cccccc;
-    border-right-width: 2px;
-
-    line-height: 28px;
-}
-
-.atuacao-direita {
-    position: static;
-    float: right;
-    padding-top: 20px;
-    width: 33.3333%; /*auto*/
-    height: 70px;
-    display: inline-block;
-    text-align: center;
-    background-color: #e4e4e4;
-    color: #222222;
-
-    border-bottom-right-radius: 15px;
-
-    line-height: 28px;
+.showcase {
+    background-image: url('../img/portfolio/capa.jpg');
 }
 
 .portfolio {
-    position: static; /* nesse tipo posso usar left: 10px ou top: 10px para ajustar */
     width: 100%;
-    background-color: auto;
+    padding: 30px;
 }
 
-.portfolio h1, p{
-    text-align: center;
-    color: #333333;
+.portfolio-container div { /* para ajudar na visualização do flex */
+    border: 0px #ccc solid;
+    padding: 0px;
 }
 
-.portfolio::before, .portfolio::after{
-    width: 100%;
-    height: 30px;
-    display: inline-block;
-    content: '';
-    margin: 0 auto;
-    background-color: auto;
+.areas-container {
+    display: flex; /* lado a lado */
+    flex-direction: row; /* eixo principal na horizontal */
+    justify-content: space-between; /* na horizontal */
+    align-items: stretch; /* na vertical */
+    align-content: center;
+    flex-wrap: nowrap;
 }
 
-.portfolio-titulo::after{
-    width: 100%;
-    height: 40px;
-    display: inline-block;
-    content: '';
-    margin: 0 auto;
-    background-color: auto;
-}
-
-.portfolio-metade {
+/*.portfolio-metade {
     width: 50%;
     float: left;
     background-color: auto;
-
     display: inline-block;
     margin-right: auto;
-}
+}*/
 
-.portfolio-chaves {
-  position: static;
-  float: auto;
-  width: 520px;
-  color: #234567;
-  background-color: auto;
-
-  /* para centralizar */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-  margin-top: 20px;
-
-  text-align: center;
+.portfolio-box-1 {
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
 }
 
 .portfolio-imagem {
-  position: static;
-  float: auto;
-  width: 520px;
-  height: 350px;
+    max-width: 520px;
+    min-width: 450px;
+    height: 350px;
+    border-radius: 10px;
 
-  /* para centralizar */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    /* para preencher o espaço das bordas */
+    background-color: white;
 
-  border-radius: 10px;
-
-  /* para preencher o espaço das bordas */
-  background-color: white;
-
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .portfolio-imagem1 {
@@ -166,115 +70,65 @@
     background-image: url('../img/portfolio/p5.png');
 }
 
-.portfolio-imagem p {
-    font-size: 20px;
-    font-weight: normal;
-    letter-spacing: 1px;
-    padding-top: 5px;
-    width: 195px;
-    height: 35px;
-    background-color: rgb(22, 70, 70, 0.9); /*51 51 51*/
-
-    border-radius: 0px;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-
+.portfolio-chaves {
+    color: #234567;
     text-align: center;
+    max-width: 520px;
 }
 
-/* Para o carrosel */
+/* Efeito carrossel */
 .quadro {
-  display: inline-block;
-  background-color: auto;
-  width: 50%;
-  float: left;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 550px;
 }
 
 .quadro p {
-  text-align: center;
-  font-size: 1em;
-  color: #aaaaaa;
-  margin-top: 10px;
+    text-align: center;
+    font-size: 1em;
+    color: #aaaaaa;
+    margin-top: 10px;
 }
 
-.setas {
-  position: absolute;
-  margin-top: 160px;
-}
-
-.setas button {
-  width: 25px;
-  height: 25px;
-  border: 0px solid steelblue;
-  outline: none;
-  background-color: auto; /* no tutorial: transparent */
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all 0.2s; /* para o efeito de deslizar */
-
-  background-color: rgba(0,0,0,0);
-
-  color: auto;
-  font-size: auto;
-}
-
-.setas button:hover {
-  cursor: pointer;
-  background-color: rgba(2,150,160,0.5);
-}
-
-.seta-e {
-  display: inline-block;
-  margin-left: 10px;
-  margin-right: 425px;
-}
-
-.seta-d {
-}
-
-.carrosel img {
-  /* width: 500px; não definir aqui */
-  /* height: 350px; não definir aqui */
-  border-radius: 10px;
+.carrosel img { /* não definir aqui width e height */
+    border-radius: 10px;
 }
 
 .quadro-interno {
-  position: relative;
-  width: 520px; /* mesmo de img */
-  height: 350px;
-  border-radius: 10px;
-  overflow: hidden;
-  background-color: white; /* branco para tirar o efeito de arrendodamento das imagens */
-
-  /* para centralizar */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    position: relative;
+    width: 520px; /* mesmo de img */
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white; /* branco para tirar o efeito de arrendodamento das imagens */
 }
 
 .carrosel {
-  display: inline-flex;
-  transition: all 0.5s; /* para o efeito de deslizar */
+    display:inline-flex;
+    transition:all 1s; /* para o efeito de deslizar */
 }
 
 .botoes {
-  /* fazer depois */
-  text-align: center;
+    /* fazer depois */
+    text-align: center;
+    max-width: 520px;
 }
 
 .botoes button {
-  width: 15px;
-  height: 15px;
-  border: 1px solid steelblue;
-  outline: none;
-  background-color: auto; /* no tutorial: transparent */
-  border-radius: 7.5px;
-  margin-top: 22px;
-  margin-left: 7px;
-  cursor: pointer;
-  transition: all 0.5s; /* para o efeito de deslizar */
+    width: 15px;
+    height: 15px;
+    border: 1px solid steelblue;
+    outline: none;
+    background-color: auto; /* no tutorial: transparent */
+    border-radius: 7.5px;
+    margin-top: 22px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: all 1s; /* para o efeito de deslizar */
 }
 
 .botoes button:nth-child(1) {
-  background-color: steelblue;
+    background-color: steelblue;
 }
